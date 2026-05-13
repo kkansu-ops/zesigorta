@@ -3,3373 +3,1019 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZES Sigorta | Zopluoğlu Engin Sigorta Acenteliği - Allianz Acentesi</title>
-    <meta name="description" content="ZES Sigorta - Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti. Allianz yetkili acentesi. Kasko, trafik, sağlık, konut sigortası ve daha fazlası.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="ZES Sigorta - Zopluoğlu Engin Sigorta Acenteliği | Allianz Yetkili Acentesi | Kasko, Trafik, Sağlık, Konut Sigortası | Ümraniye İstanbul">
+    <meta name="keywords" content="ZES Sigorta, Allianz Acentesi, Kasko, Trafik Sigortası, Sağlık Sigortası, Ümraniye Sigorta, İstanbul Sigorta Acentesi">
+    <title>ZES Sigorta | Allianz Yetkili Acentesi | Ümraniye İstanbul</title>
+    <link rel="canonical" href="https://www.zesigorta.com.tr">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --allianz-blue: #003781;
-            --allianz-dark: #00234F;
-            --allianz-light-blue: #0066B3;
-            --allianz-sky: #E8F0FE;
-            --allianz-accent: #1A8BD1;
+            --allianz-dark: #003781;
+            --allianz-blue: #0070B8;
+            --allianz-light: #E8F4FD;
+            --zes-accent: #00A3E0;
             --white: #FFFFFF;
             --gray-50: #F8FAFC;
             --gray-100: #F1F5F9;
             --gray-200: #E2E8F0;
-            --gray-300: #CBD5E1;
-            --gray-400: #94A3B8;
             --gray-500: #64748B;
             --gray-600: #475569;
             --gray-700: #334155;
-            --gray-800: #1E293B;
             --gray-900: #0F172A;
-            --gradient-primary: linear-gradient(135deg, #003781 0%, #0066B3 50%, #1A8BD1 100%);
-            --gradient-dark: linear-gradient(135deg, #00234F 0%, #003781 100%);
-            --gradient-hero: linear-gradient(160deg, #001529 0%, #003781 40%, #0066B3 100%);
-            --shadow-sm: 0 1px 2px rgba(0, 55, 129, 0.05);
-            --shadow-md: 0 4px 16px rgba(0, 55, 129, 0.1);
-            --shadow-lg: 0 8px 32px rgba(0, 55, 129, 0.12);
-            --shadow-xl: 0 16px 48px rgba(0, 55, 129, 0.15);
-            --shadow-2xl: 0 24px 64px rgba(0, 55, 129, 0.2);
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
-            --radius-2xl: 32px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--gray-800);
-            background: var(--white);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* ===================== PRELOADER ===================== */
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--allianz-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 99999;
-            transition: opacity 0.6s ease, visibility 0.6s ease;
-        }
-
-        .preloader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .preloader-content {
-            text-align: center;
-        }
-
-        .preloader-logo {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
-            color: var(--white);
-            letter-spacing: 4px;
-            animation: preloaderPulse 1.5s ease-in-out infinite;
-        }
-
-        .preloader-bar {
-            width: 200px;
-            height: 3px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            margin: 20px auto 0;
-            overflow: hidden;
-        }
-
-        .preloader-bar::after {
-            content: '';
-            display: block;
-            width: 40%;
-            height: 100%;
-            background: var(--white);
-            border-radius: 10px;
-            animation: preloaderSlide 1.2s ease-in-out infinite;
-        }
-
-        @keyframes preloaderPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
-        }
-
-        @keyframes preloaderSlide {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(350%); }
-        }
-
-        /* ===================== TOP BAR ===================== */
-        .top-bar {
-            background: var(--allianz-dark);
-            padding: 8px 0;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.8);
-            position: relative;
-            z-index: 1001;
-        }
-
-        .top-bar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top-bar-left {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        .top-bar-left a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: color 0.3s ease;
-        }
-
-        .top-bar-left a:hover {
-            color: var(--white);
-        }
-
-        .top-bar-right {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .top-bar-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .top-bar-social a {
-            color: rgba(255, 255, 255, 0.6);
-            transition: color 0.3s ease;
-            font-size: 0.85rem;
-        }
-
-        .top-bar-social a:hover {
-            color: var(--white);
-        }
-
-        .allianz-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            color: var(--white);
-            font-weight: 500;
-        }
-
-        .allianz-badge img {
-            height: 16px;
-        }
-
-        /* ===================== NAVBAR ===================== */
-        .navbar {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border-bottom: 1px solid rgba(0, 55, 129, 0.08);
-        }
-
-        .navbar.scrolled {
-            box-shadow: 0 4px 30px rgba(0, 55, 129, 0.1);
-        }
-
-        .navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 0;
-            padding-bottom: 0;
-            height: 80px;
-        }
-
-        .nav-brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .nav-logo-icon {
-            position: relative;
-            width: 48px;
-            height: 48px;
-        }
-
-        .compass-star {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .compass-star svg {
-            width: 48px;
-            height: 48px;
-        }
-
-        .nav-logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .nav-logo-zes {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: var(--allianz-blue);
-            letter-spacing: 3px;
-            line-height: 1;
-        }
-
-        .nav-logo-sub {
-            font-size: 0.55rem;
-            color: var(--gray-500);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-top: 2px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            list-style: none;
-        }
-
-        .nav-links li a {
-            text-decoration: none;
-            color: var(--gray-700);
-            font-weight: 500;
-            font-size: 0.9rem;
-            padding: 8px 16px;
-            border-radius: var(--radius-sm);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links li a:hover,
-        .nav-links li a.active {
-            color: var(--allianz-blue);
-            background: var(--allianz-sky);
-        }
-
-        .nav-cta {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .btn-nav-secondary {
-            padding: 10px 20px;
-            border: 2px solid var(--allianz-blue);
-            color: var(--allianz-blue);
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            background: transparent;
-            cursor: pointer;
-        }
-
-        .btn-nav-secondary:hover {
-            background: var(--allianz-sky);
-        }
-
-        .btn-nav-primary {
-            padding: 10px 24px;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border: none;
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .btn-nav-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .mobile-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            z-index: 1002;
-        }
-
-        .mobile-toggle span {
-            width: 24px;
-            height: 2.5px;
-            background: var(--allianz-blue);
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        .mobile-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-
-        /* ===================== CONTAINER ===================== */
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        .container-sm {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* ===================== HERO ===================== */
-        .hero {
-            background: var(--gradient-hero);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            padding: 120px 0 80px;
-        }
-
-        .hero-bg-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.05;
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 40%),
-                radial-gradient(circle at 60% 80%, rgba(255,255,255,0.15) 0%, transparent 40%);
-        }
-
-        .hero-grid-lines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.03;
-            background-image: 
-                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
-            background-size: 60px 60px;
-        }
-
-        .hero-floating-shapes {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .hero-shape {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.06;
-            background: white;
-        }
-
-        .hero-shape-1 {
-            width: 400px;
-            height: 400px;
-            top: -100px;
-            right: -100px;
-            animation: heroFloat 20s ease-in-out infinite;
-        }
-
-        .hero-shape-2 {
-            width: 250px;
-            height: 250px;
-            bottom: -50px;
-            left: -50px;
-            animation: heroFloat 15s ease-in-out infinite reverse;
-        }
-
-        .hero-shape-3 {
-            width: 150px;
-            height: 150px;
-            top: 40%;
-            left: 60%;
-            animation: heroFloat 12s ease-in-out infinite 3s;
-        }
-
-        @keyframes heroFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(20px, -30px) scale(1.05); }
-            66% { transform: translate(-15px, 20px) scale(0.95); }
-        }
-
-        .hero .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-content {
-            color: var(--white);
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-bottom: 28px;
-            color: rgba(255, 255, 255, 0.95);
-        }
-
-        .hero-badge-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #4ADE80;
-            animation: badgePulse 2s ease-in-out infinite;
-        }
-
-        @keyframes badgePulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.3); }
-        }
-
-        .hero h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.15;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
-        }
-
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, #60A5FA, #93C5FD);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.15rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.75);
-            margin-bottom: 40px;
-            max-width: 500px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-        .btn-hero-primary {
-            padding: 16px 32px;
-            background: var(--white);
-            color: var(--allianz-blue);
-            border: none;
-            border-radius: var(--radius-md);
-            font-weight: 700;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-        }
-
-        .btn-hero-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-hero-secondary {
-            padding: 16px 32px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            color: var(--white);
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-hero-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin-top: 56px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .hero-stat {
-            text-align: left;
-        }
-
-        .hero-stat-value {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--white);
-            line-height: 1;
-            margin-bottom: 4px;
-        }
-
-        .hero-stat-label {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-            font-weight: 400;
-        }
-
-        /* Hero Right - Cards */
-        .hero-visual {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-cards-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 480px;
-            aspect-ratio: 1;
-        }
-
-        .hero-card {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: var(--radius-xl);
-            padding: 28px;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .hero-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .hero-card-1 {
-            top: 0;
-            right: 0;
-            width: 280px;
-            animation: cardFloat1 6s ease-in-out infinite;
-        }
-
-        .hero-card-2 {
-            top: 45%;
-            left: 0;
-            width: 260px;
-            animation: cardFloat2 7s ease-in-out infinite 1s;
-        }
-
-        .hero-card-3 {
-            bottom: 0;
-            right: 20px;
-            width: 240px;
-            animation: cardFloat3 8s ease-in-out infinite 2s;
-        }
-
-        @keyframes cardFloat1 {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-
-        @keyframes cardFloat2 {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        @keyframes cardFloat3 {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
-
-        .hero-card-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: var(--radius-md);
-            background: rgba(255, 255, 255, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            color: var(--white);
-            margin-bottom: 16px;
-        }
-
-        .hero-card-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 6px;
-        }
-
-        .hero-card-desc {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.6);
-            line-height: 1.5;
-        }
-
-        /* ===================== SECTION STYLES ===================== */
-        .section {
-            padding: 100px 0;
-        }
-
-        .section-dark {
-            background: var(--gray-50);
-        }
-
-        .section-blue {
-            background: var(--gradient-hero);
-            color: var(--white);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 64px;
-            max-width: 680px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .section-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--allianz-sky);
-            color: var(--allianz-blue);
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 16px;
-        }
-
-        .section-blue .section-label {
-            background: rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .section-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--gray-900);
-            line-height: 1.2;
-            margin-bottom: 16px;
-            letter-spacing: -0.02em;
-        }
-
-        .section-blue .section-title {
-            color: var(--white);
-        }
-
-        .section-desc {
-            font-size: 1.1rem;
-            color: var(--gray-500);
-            line-height: 1.7;
-        }
-
-        .section-blue .section-desc {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        /* ===================== PARTNERS TICKER ===================== */
-        .partners-ticker {
-            background: var(--white);
-            padding: 32px 0;
-            border-bottom: 1px solid var(--gray-200);
-            overflow: hidden;
-        }
-
-        .partners-ticker-label {
-            text-align: center;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--gray-400);
-            font-weight: 600;
-            margin-bottom: 24px;
-        }
-
-        .ticker-track {
-            display: flex;
-            animation: ticker 30s linear infinite;
-            width: max-content;
-        }
-
-        .ticker-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 40px;
-            font-size: 1.2rem;
-            color: var(--gray-300);
-            font-weight: 700;
-            white-space: nowrap;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* ===================== SERVICES ===================== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
-
-        .service-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 36px 28px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid var(--gray-200);
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-            border-color: transparent;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: var(--radius-md);
-            background: var(--allianz-sky);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            color: var(--allianz-blue);
-            margin-bottom: 20px;
-            transition: all 0.4s ease;
-        }
-
-        .service-card:hover .service-icon {
-            background: var(--allianz-blue);
-            color: var(--white);
-            transform: scale(1.1);
-        }
-
-        .service-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 10px;
-        }
-
-        .service-desc {
-            font-size: 0.88rem;
-            color: var(--gray-500);
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .service-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--allianz-blue);
-            transition: gap 0.3s ease;
-        }
-
-        .service-card:hover .service-link {
-            gap: 10px;
-        }
-
-        /* ===================== WHY US ===================== */
-        .why-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .why-image {
-            position: relative;
-        }
-
-        .why-image-main {
-            width: 100%;
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            position: relative;
-            background: var(--gradient-primary);
-            aspect-ratio: 4/3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .why-image-main .compass-star-big svg {
-            width: 200px;
-            height: 200px;
-            opacity: 0.15;
-        }
-
-        .why-image-badge {
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 20px 28px;
-            box-shadow: var(--shadow-xl);
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .why-image-badge-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: var(--radius-md);
-            background: var(--allianz-sky);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--allianz-blue);
-            font-size: 1.2rem;
-        }
-
-        .why-image-badge-text h4 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--allianz-blue);
-            line-height: 1;
-        }
-
-        .why-image-badge-text p {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-            margin-top: 2px;
-        }
-
-        .why-content .section-label {
-            display: inline-flex;
-        }
-
-        .why-content .section-title {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .why-content .section-desc {
-            text-align: left;
-            margin-bottom: 36px;
-        }
-
-        .why-features {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .why-feature {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .why-feature-icon {
-            width: 44px;
-            height: 44px;
-            min-width: 44px;
-            border-radius: var(--radius-sm);
-            background: var(--allianz-sky);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--allianz-blue);
-            font-size: 1rem;
-        }
-
-        .why-feature h4 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 4px;
-        }
-
-        .why-feature p {
-            font-size: 0.85rem;
-            color: var(--gray-500);
-            line-height: 1.5;
-        }
-
-        /* ===================== QUICK QUOTE ===================== */
-        .quote-section {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .quote-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
-            background: var(--white);
-            border-radius: var(--radius-2xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-2xl);
-            border: 1px solid var(--gray-200);
-        }
-
-        .quote-info {
-            background: var(--gradient-primary);
-            padding: 60px;
-            color: var(--white);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .quote-info::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-        }
-
-        .quote-info h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 16px;
-            position: relative;
-        }
-
-        .quote-info p {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.7;
-            margin-bottom: 32px;
-            position: relative;
-        }
-
-        .quote-benefits {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            position: relative;
-        }
-
-        .quote-benefits li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .quote-benefits li i {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-        }
-
-        .quote-form-wrapper {
-            padding: 60px;
-        }
-
-        .quote-form-wrapper h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--gray-900);
-            margin-bottom: 8px;
-        }
-
-        .quote-form-wrapper > p {
-            font-size: 0.9rem;
-            color: var(--gray-500);
-            margin-bottom: 32px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-label {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--gray-700);
-            margin-bottom: 8px;
-        }
-
-        .form-input,
-        .form-select {
-            width: 100%;
-            padding: 14px 16px;
-            border: 2px solid var(--gray-200);
-            border-radius: var(--radius-sm);
-            font-size: 0.95rem;
-            color: var(--gray-800);
-            background: var(--white);
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            outline: none;
-        }
-
-        .form-input:focus,
-        .form-select:focus {
-            border-color: var(--allianz-blue);
-            box-shadow: 0 0 0 4px rgba(0, 55, 129, 0.1);
-        }
-
-        .form-input::placeholder {
-            color: var(--gray-400);
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .form-textarea {
-            width: 100%;
-            padding: 14px 16px;
-            border: 2px solid var(--gray-200);
-            border-radius: var(--radius-sm);
-            font-size: 0.95rem;
-            color: var(--gray-800);
-            background: var(--white);
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            outline: none;
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .form-textarea:focus {
-            border-color: var(--allianz-blue);
-            box-shadow: 0 0 0 4px rgba(0, 55, 129, 0.1);
-        }
-
-        .btn-form-submit {
-            width: 100%;
-            padding: 16px 32px;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border: none;
-            border-radius: var(--radius-sm);
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            font-family: 'Inter', sans-serif;
-            margin-top: 8px;
-        }
-
-        .btn-form-submit:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* ===================== PRODUCTS DETAIL ===================== */
-        .products-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-bottom: 48px;
-            flex-wrap: wrap;
-        }
-
-        .product-tab {
-            padding: 12px 24px;
-            border: 2px solid var(--gray-200);
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            background: var(--white);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .product-tab:hover,
-        .product-tab.active {
-            border-color: var(--allianz-blue);
-            color: var(--allianz-blue);
-            background: var(--allianz-sky);
-        }
-
-        .product-tab.active {
-            background: var(--allianz-blue);
-            color: var(--white);
-        }
-
-        .product-content {
-            display: none;
-        }
-
-        .product-content.active {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .product-info h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--gray-900);
-            margin-bottom: 16px;
-        }
-
-        .product-info > p {
-            font-size: 1rem;
-            color: var(--gray-500);
-            line-height: 1.7;
-            margin-bottom: 28px;
-        }
-
-        .product-features {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 32px;
-        }
-
-        .product-features li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.95rem;
-            color: var(--gray-700);
-        }
-
-        .product-features li i {
-            color: #10B981;
-            font-size: 0.9rem;
-        }
-
-        .btn-product {
-            padding: 14px 28px;
-            background: var(--gradient-primary);
-            color: var(--white);
-            border: none;
-            border-radius: var(--radius-sm);
-            font-weight: 700;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-        }
-
-        .btn-product:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .product-visual {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .product-illustration {
-            width: 100%;
-            max-width: 400px;
-            aspect-ratio: 1;
-            background: var(--allianz-sky);
-            border-radius: var(--radius-2xl);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-illustration::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(0, 55, 129, 0.05) 0%, transparent 70%);
-        }
-
-        /* ===================== TESTIMONIALS ===================== */
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-
-        .testimonial-card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: var(--radius-xl);
-            padding: 36px;
-            transition: all 0.4s ease;
-        }
-
-        .testimonial-card:hover {
-            background: rgba(255, 255, 255, 0.12);
-            transform: translateY(-5px);
-        }
-
-        .testimonial-stars {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 20px;
-            color: #FBBF24;
-            font-size: 0.9rem;
-        }
-
-        .testimonial-text {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.7;
-            margin-bottom: 24px;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .testimonial-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            color: var(--white);
-            font-size: 1rem;
-        }
-
-        .testimonial-name {
-            font-weight: 700;
-            color: var(--white);
-            font-size: 0.95rem;
-        }
-
-        .testimonial-role {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* ===================== TEAM ===================== */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 36px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .team-card {
-            background: var(--white);
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            border: 1px solid var(--gray-200);
-            transition: all 0.4s ease;
-        }
-
-        .team-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .team-card-header {
-            background: var(--gradient-primary);
-            padding: 40px 32px 30px;
-            text-align: center;
-            position: relative;
-        }
-
-        .team-avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            font-size: 2rem;
-            color: var(--white);
-            border: 3px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .team-name {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: var(--white);
-        }
-
-        .team-role {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-top: 4px;
-        }
-
-        .team-card-body {
-            padding: 28px 32px;
-        }
-
-        .team-contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 0;
-            border-bottom: 1px solid var(--gray-100);
-        }
-
-        .team-contact-item:last-child {
-            border-bottom: none;
-        }
-
-        .team-contact-item i {
-            width: 36px;
-            height: 36px;
-            border-radius: var(--radius-sm);
-            background: var(--allianz-sky);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--allianz-blue);
-            font-size: 0.85rem;
-        }
-
-        .team-contact-item span,
-        .team-contact-item a {
-            font-size: 0.9rem;
-            color: var(--gray-700);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .team-contact-item a:hover {
-            color: var(--allianz-blue);
-        }
-
-        /* ===================== CONTACT ===================== */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 48px;
-        }
-
-        .contact-info-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact-info-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 28px;
-            border: 1px solid var(--gray-200);
-            transition: all 0.3s ease;
-        }
-
-        .contact-info-card:hover {
-            box-shadow: var(--shadow-md);
-            border-color: var(--allianz-blue);
-        }
-
-        .contact-info-card-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: var(--radius-md);
-            background: var(--allianz-sky);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--allianz-blue);
-            font-size: 1.1rem;
-            margin-bottom: 16px;
-        }
-
-        .contact-info-card h4 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 8px;
-        }
-
-        .contact-info-card p,
-        .contact-info-card a {
-            font-size: 0.9rem;
-            color: var(--gray-500);
-            text-decoration: none;
-            line-height: 1.6;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info-card a:hover {
-            color: var(--allianz-blue);
-        }
-
-        .contact-map {
-            background: var(--white);
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            border: 1px solid var(--gray-200);
-            height: 100%;
-            min-height: 400px;
-        }
-
-        .contact-map iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* ===================== CTA BANNER ===================== */
-        .cta-banner {
-            background: var(--gradient-primary);
-            border-radius: var(--radius-2xl);
-            padding: 72px 60px;
-            text-align: center;
-            color: var(--white);
-            position: relative;
-            overflow: hidden;
-            margin: 0 24px;
-        }
-
-        .cta-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.08) 0%, transparent 50%);
-        }
-
-        .cta-banner h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 16px;
-            position: relative;
-        }
-
-        .cta-banner p {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 36px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            position: relative;
-            flex-wrap: wrap;
-        }
-
-        .btn-cta-primary {
-            padding: 16px 36px;
-            background: var(--white);
-            color: var(--allianz-blue);
-            border: none;
-            border-radius: var(--radius-md);
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-        }
-
-        .btn-cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-cta-secondary {
-            padding: 16px 36px;
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            color: var(--white);
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-        }
-
-        .btn-cta-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* ===================== FOOTER ===================== */
-        .footer {
-            background: var(--gray-900);
-            color: var(--white);
-            padding-top: 80px;
-        }
-
-        .footer-main {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 48px;
-            padding-bottom: 60px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .footer-brand {
-            max-width: 320px;
-        }
-
-        .footer-logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .footer-logo-text {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--white);
-            letter-spacing: 3px;
-        }
-
-        .footer-brand p {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.5);
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .footer-social a {
-            width: 40px;
-            height: 40px;
-            border-radius: var(--radius-sm);
-            background: rgba(255, 255, 255, 0.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255, 255, 255, 0.6);
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .footer-social a:hover {
-            background: var(--allianz-blue);
-            color: var(--white);
-            transform: translateY(-3px);
-        }
-
-        .footer-col h4 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .footer-col ul {
-            list-style: none;
-        }
-
-        .footer-col ul li {
-            margin-bottom: 12px;
-        }
-
-        .footer-col ul li a {
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .footer-col ul li a:hover {
-            color: var(--white);
-            padding-left: 4px;
-        }
-
-        .footer-bottom {
-            padding: 24px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .footer-bottom p {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .footer-allianz-badge {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .footer-allianz-badge .allianz-text {
-            font-weight: 700;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        /* ===================== SCROLL TO TOP ===================== */
-        .scroll-top {
-            position: fixed;
-            bottom: 32px;
-            right: 32px;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--allianz-blue);
-            color: var(--white);
-            border: none;
-            font-size: 1.1rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-            box-shadow: var(--shadow-lg);
-            z-index: 999;
-        }
-
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        /* ===================== WHATSAPP FLOAT ===================== */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 32px;
-            left: 32px;
-            z-index: 999;
-        }
-
-        .whatsapp-btn {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: #25D366;
-            color: var(--white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            text-decoration: none;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            transition: all 0.3s ease;
-            animation: whatsappPulse 2s ease-in-out infinite;
-        }
-
-        .whatsapp-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
-        }
-
-        @keyframes whatsappPulse {
-            0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-            50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
-        }
-
-        /* ===================== ANIMATIONS ===================== */
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .fade-left {
-            opacity: 0;
-            transform: translateX(-30px);
-            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-left.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .fade-right {
-            opacity: 0;
-            transform: translateX(30px);
-            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-right.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        /* ===================== COOKIE BANNER ===================== */
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: var(--gray-900);
-            color: var(--white);
-            padding: 20px 0;
-            z-index: 9999;
-            transform: translateY(100%);
-            transition: transform 0.5s ease;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .cookie-banner.show {
-            transform: translateY(0);
-        }
-
-        .cookie-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-        }
-
-        .cookie-content p {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.6;
-        }
-
-        .cookie-buttons {
-            display: flex;
-            gap: 12px;
-            flex-shrink: 0;
-        }
-
-        .btn-cookie-accept {
-            padding: 10px 24px;
-            background: var(--allianz-blue);
-            color: var(--white);
-            border: none;
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-cookie-accept:hover {
-            background: var(--allianz-light-blue);
-        }
-
-        /* ===================== RESPONSIVE ===================== */
+            --success: #10B981;
+            --warning: #F59E0B;
+            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.1);
+            --shadow-lg: 0 25px 50px -12px rgba(0,0,0,0.15);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; color: var(--gray-700); line-height: 1.7; overflow-x: hidden; background: var(--white); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--allianz-light); color: var(--allianz-blue); padding: 8px 20px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 16px; }
+        .section-title { font-size: 2.5rem; font-weight: 800; color: var(--allianz-dark); margin-bottom: 16px; line-height: 1.2; }
+        .section-subtitle { font-size: 1.1rem; color: var(--gray-500); max-width: 600px; margin: 0 auto 50px; }
+        .text-center { text-align: center; }
+        .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; border-radius: 50px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.95rem; border: none; cursor: pointer; transition: var(--transition); }
+        .btn-primary { background: linear-gradient(135deg, var(--allianz-blue), var(--allianz-dark)); color: var(--white); box-shadow: 0 4px 15px rgba(0,112,184,0.4); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,112,184,0.5); }
+        .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); }
+        .btn-outline:hover { background: var(--white); color: var(--allianz-dark); border-color: var(--white); }
+        .btn-white { background: var(--white); color: var(--allianz-dark); box-shadow: var(--shadow); }
+        .btn-white:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+        .btn-whatsapp { background: #25D366 !important; color: var(--white) !important; box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+        .btn-whatsapp:hover { transform: translateY(-3px); }
+
+        /* ===== PRELOADER ===== */
+        #preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--allianz-dark); display: flex; align-items: center; justify-content: center; z-index: 99999; transition: opacity 0.5s ease, visibility 0.5s ease; }
+        #preloader.hidden { opacity: 0; visibility: hidden; }
+        .loader { text-align: center; }
+        .loader-logo img { height: 60px; margin-bottom: 30px; filter: brightness(0) invert(1); }
+        .loader-bar { width: 200px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; margin: 0 auto; }
+        .loader-bar::after { content: ''; display: block; width: 40%; height: 100%; background: var(--zes-accent); border-radius: 4px; animation: loading 1.2s ease-in-out infinite; }
+        @keyframes loading { 0% { transform: translateX(-100%); } 100% { transform: translateX(350%); } }
+
+        /* ===== NAVBAR ===== */
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 14px 0; transition: var(--transition); }
+        .navbar.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); padding: 8px 0; box-shadow: 0 4px 30px rgba(0,0,0,0.08); }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+
+        /* Navbar Logo */
+        .nav-logo { display: flex; align-items: center; }
+        .nav-logo .logo-white { display: block; height: 44px; }
+        .nav-logo .logo-blue { display: none; height: 44px; }
+        .navbar.scrolled .nav-logo .logo-white { display: none; }
+        .navbar.scrolled .nav-logo .logo-blue { display: block; }
+
+        .nav-links { display: flex; align-items: center; gap: 8px; }
+        .nav-links a { color: rgba(255,255,255,0.85); font-weight: 500; font-size: 0.9rem; padding: 8px 16px; border-radius: 8px; transition: var(--transition); }
+        .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+        .navbar.scrolled .nav-links a { color: var(--gray-600); }
+        .navbar.scrolled .nav-links a:hover { color: var(--allianz-blue); background: var(--allianz-light); }
+        .nav-cta { background: var(--white) !important; color: var(--allianz-dark) !important; font-weight: 600 !important; padding: 10px 24px !important; border-radius: 50px !important; box-shadow: var(--shadow); }
+        .navbar.scrolled .nav-cta { background: linear-gradient(135deg, var(--allianz-blue), var(--allianz-dark)) !important; color: var(--white) !important; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+        .nav-toggle span { width: 28px; height: 3px; background: var(--white); border-radius: 3px; transition: var(--transition); }
+        .navbar.scrolled .nav-toggle span { background: var(--allianz-dark); }
+        .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px,6px); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-6px); }
+
+        /* ===== HERO ===== */
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; background: linear-gradient(135deg, #001a3d 0%, var(--allianz-dark) 30%, var(--allianz-blue) 70%, #0090d9 100%); }
+        .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 800px; height: 800px; border-radius: 50%; background: radial-gradient(circle, rgba(0,163,224,0.15) 0%, transparent 70%); animation: heroFloat 8s ease-in-out infinite; }
+        @keyframes heroFloat { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(30px,-30px) scale(1.05); } }
+        .hero-particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
+        .particle { position: absolute; width: 4px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 50%; animation: particleFloat linear infinite; }
+        @keyframes particleFloat { 0% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; } }
+        .hero .container { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding-top: 80px; }
+        .hero-content h1 { font-size: 3.2rem; font-weight: 800; color: var(--white); line-height: 1.15; margin-bottom: 20px; }
+        .hero-content h1 .highlight { background: linear-gradient(135deg, var(--zes-accent), #4FC3F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-content p { font-size: 1.15rem; color: rgba(255,255,255,0.75); margin-bottom: 36px; max-width: 500px; line-height: 1.8; }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+
+        /* Hero Allianz Badge */
+        .hero-allianz-badge { display: inline-flex; align-items: center; margin-bottom: 24px; }
+        .hero-allianz-badge img { height: 36px; filter: brightness(0) invert(1); }
+
+        .hero-stats { display: flex; gap: 40px; margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .hero-stat h3 { font-size: 2rem; font-weight: 800; color: var(--white); }
+        .hero-stat p { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+
+        /* Hero Visual - ZES Star */
+        .hero-visual { display: flex; justify-content: center; align-items: center; }
+        .hero-visual-inner { position: relative; width: 420px; height: 420px; display: flex; align-items: center; justify-content: center; }
+        .hero-star-bg { position: absolute; width: 350px; height: 350px; opacity: 0.12; animation: rotateStar 20s linear infinite; }
+        @keyframes rotateStar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .hero-card-stack { position: relative; width: 100%; height: 100%; }
+        .hero-card { position: absolute; background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-lg); padding: 28px; transition: var(--transition); }
+        .hero-card:hover { background: rgba(255,255,255,0.15); transform: translateY(-5px); }
+        .hero-card-1 { top: 0; left: 0; width: 250px; animation: cardFloat1 6s ease-in-out infinite; }
+        .hero-card-2 { top: 60px; right: 0; width: 230px; animation: cardFloat2 7s ease-in-out infinite; }
+        .hero-card-3 { bottom: 20px; left: 40px; width: 270px; animation: cardFloat3 8s ease-in-out infinite; }
+        @keyframes cardFloat1 { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        @keyframes cardFloat2 { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        @keyframes cardFloat3 { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .hero-card-icon { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--white); margin-bottom: 14px; }
+        .hero-card h4 { color: var(--white); font-weight: 600; font-size: 1rem; margin-bottom: 6px; }
+        .hero-card p { color: rgba(255,255,255,0.6); font-size: 0.8rem; line-height: 1.5; }
+        .hero-wave { position: absolute; bottom: -2px; left: 0; width: 100%; z-index: 3; }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar { background: var(--white); padding: 36px 0; border-bottom: 1px solid var(--gray-100); }
+        .trust-items { display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap; }
+        .trust-item { display: flex; align-items: center; gap: 12px; color: var(--gray-500); font-size: 0.9rem; font-weight: 500; }
+        .trust-item i { font-size: 1.4rem; color: var(--allianz-blue); }
+        /* Allianz logo trust item */
+        .trust-item-logo img { height: 32px; }
+
+        /* ===== PRODUCTS ===== */
+        .products { padding: 100px 0; background: var(--gray-50); }
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .product-card { background: var(--white); border-radius: var(--radius-lg); padding: 36px 28px; text-align: center; transition: var(--transition); border: 1px solid var(--gray-100); position: relative; overflow: hidden; cursor: pointer; }
+        .product-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--allianz-blue), var(--zes-accent)); transform: scaleX(0); transition: var(--transition); }
+        .product-card:hover::before { transform: scaleX(1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+        .product-icon { width: 70px; height: 70px; border-radius: 16px; background: var(--allianz-light); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; color: var(--allianz-blue); transition: var(--transition); }
+        .product-card:hover .product-icon { background: linear-gradient(135deg, var(--allianz-blue), var(--allianz-dark)); color: var(--white); transform: scale(1.1); }
+        .product-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--allianz-dark); margin-bottom: 10px; }
+        .product-card p { font-size: 0.85rem; color: var(--gray-500); line-height: 1.6; }
+        .product-link { display: inline-flex; align-items: center; gap: 6px; color: var(--allianz-blue); font-weight: 600; font-size: 0.85rem; margin-top: 16px; opacity: 0; transform: translateY(10px); transition: var(--transition); }
+        .product-card:hover .product-link { opacity: 1; transform: translateY(0); }
+
+        /* ===== ABOUT ===== */
+        .about { padding: 100px 0; background: var(--white); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .about-image { position: relative; }
+        .about-image-main { width: 100%; height: 450px; border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--allianz-dark), var(--allianz-blue)); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; gap: 24px; }
+        /* ZES Logo in about */
+        .about-zes-logo { height: 90px; filter: brightness(0) invert(1); position: relative; z-index: 2; }
+        /* ZES Star watermark in about */
+        .about-star-watermark { position: absolute; right: -60px; bottom: -60px; width: 300px; opacity: 0.07; }
+        /* Allianz badge in about */
+        .about-allianz-badge { display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.15); padding: 12px 28px; border-radius: 50px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 2; }
+        .about-allianz-badge img { height: 28px; filter: brightness(0) invert(1); }
+        .about-float-card { position: absolute; bottom: -30px; right: -30px; background: var(--white); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 16px; }
+        .about-float-icon { width: 50px; height: 50px; border-radius: 12px; background: var(--allianz-light); display: flex; align-items: center; justify-content: center; color: var(--allianz-blue); font-size: 1.3rem; }
+        .about-float-card h4 { font-size: 1.5rem; font-weight: 800; color: var(--allianz-dark); }
+        .about-float-card p { font-size: 0.8rem; color: var(--gray-500); }
+        .about-content h2 { font-size: 2.2rem; font-weight: 800; color: var(--allianz-dark); margin-bottom: 20px; line-height: 1.2; }
+        .about-content > p { color: var(--gray-600); margin-bottom: 30px; font-size: 1rem; line-height: 1.8; }
+        .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 36px; }
+        .about-feature { display: flex; align-items: flex-start; gap: 12px; }
+        .about-feature-icon { width: 36px; height: 36px; min-width: 36px; border-radius: 8px; background: var(--allianz-light); display: flex; align-items: center; justify-content: center; color: var(--allianz-blue); font-size: 0.9rem; }
+        .about-feature h4 { font-size: 0.9rem; font-weight: 600; color: var(--allianz-dark); margin-bottom: 2px; }
+        .about-feature p { font-size: 0.8rem; color: var(--gray-500); }
+
+        /* ===== WHY US ===== */
+        .why-us { padding: 100px 0; background: linear-gradient(135deg, var(--allianz-dark) 0%, #001a3d 100%); position: relative; overflow: hidden; }
+        .why-us::before { content: ''; position: absolute; top: 0; right: 0; width: 40%; height: 100%; background: radial-gradient(circle at right, rgba(0,163,224,0.1), transparent); }
+        /* ZES star decoration in why-us */
+        .why-star-deco { position: absolute; left: -80px; bottom: -80px; width: 400px; opacity: 0.04; }
+        .why-us .section-title { color: var(--white); }
+        .why-us .section-subtitle { color: rgba(255,255,255,0.6); }
+        .why-us .section-badge { background: rgba(255,255,255,0.1); color: var(--zes-accent); }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; position: relative; z-index: 2; }
+        .why-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 40px 30px; transition: var(--transition); }
+        .why-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-5px); }
+        .why-card-number { font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--zes-accent), rgba(0,163,224,0.3)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 16px; }
+        .why-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+        .why-card p { color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.7; }
+
+        /* ===== QUOTE ===== */
+        .quote { padding: 100px 0; background: var(--gray-50); }
+        .quote-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+        .quote-info h2 { font-size: 2.2rem; font-weight: 800; color: var(--allianz-dark); margin-bottom: 20px; line-height: 1.2; }
+        .quote-info > p { color: var(--gray-600); margin-bottom: 36px; line-height: 1.8; }
+        .quote-benefits { display: flex; flex-direction: column; gap: 20px; }
+        .quote-benefit { display: flex; align-items: center; gap: 16px; }
+        .quote-benefit-icon { width: 45px; height: 45px; min-width: 45px; border-radius: 12px; background: var(--allianz-light); display: flex; align-items: center; justify-content: center; color: var(--allianz-blue); font-size: 1.1rem; }
+        .quote-benefit h4 { font-size: 0.95rem; font-weight: 600; color: var(--allianz-dark); }
+        .quote-benefit p { font-size: 0.8rem; color: var(--gray-500); }
+        .quote-form-card { background: var(--white); border-radius: var(--radius-lg); padding: 44px; box-shadow: var(--shadow-lg); border: 1px solid var(--gray-100); }
+        .quote-form-card h3 { font-size: 1.4rem; font-weight: 700; color: var(--allianz-dark); margin-bottom: 8px; }
+        .quote-form-card > p { color: var(--gray-500); font-size: 0.85rem; margin-bottom: 28px; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--gray-700); margin-bottom: 6px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 2px solid var(--gray-200); border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--gray-700); transition: var(--transition); background: var(--gray-50); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--allianz-blue); background: var(--white); box-shadow: 0 0 0 4px rgba(0,112,184,0.1); }
+        .form-group textarea { height: 100px; resize: vertical; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .form-submit { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--allianz-blue), var(--allianz-dark)); color: var(--white); border: none; border-radius: 12px; font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
+        .form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,112,184,0.4); }
+        .form-notice { display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 0.75rem; color: var(--gray-500); }
+        .form-notice i { color: var(--success); }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials { padding: 100px 0; background: var(--white); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .testimonial-card { background: var(--gray-50); border-radius: var(--radius-lg); padding: 36px; border: 1px solid var(--gray-100); transition: var(--transition); }
+        .testimonial-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+
+        /* ZES Star rating */
+        .testimonial-stars { display: flex; align-items: center; gap: 6px; margin-bottom: 16px; }
+        .zes-star { width: 22px; height: 22px; }
+
+        .testimonial-card > p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--allianz-blue), var(--zes-accent)); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 0.9rem; }
+        .testimonial-author h4 { font-size: 0.9rem; font-weight: 600; color: var(--allianz-dark); }
+        .testimonial-author p { font-size: 0.75rem; color: var(--gray-500); }
+
+        /* ===== FAQ ===== */
+        .faq { padding: 100px 0; background: var(--gray-50); }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--white); border-radius: var(--radius); margin-bottom: 12px; border: 1px solid var(--gray-100); overflow: hidden; transition: var(--transition); }
+        .faq-item.active { box-shadow: var(--shadow-md); border-color: var(--allianz-blue); }
+        .faq-question { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; cursor: pointer; font-weight: 600; color: var(--allianz-dark); font-size: 0.95rem; transition: var(--transition); }
+        .faq-question:hover { color: var(--allianz-blue); }
+        .faq-question i { transition: var(--transition); color: var(--allianz-blue); }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-answer p { padding: 0 24px 20px; color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; }
+        .faq-item.active .faq-answer { max-height: 300px; }
+
+        /* ===== CONTACT ===== */
+        .contact { padding: 100px 0; background: var(--white); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+        .contact-card { background: var(--gray-50); border-radius: var(--radius); padding: 24px; text-align: center; transition: var(--transition); border: 1px solid var(--gray-100); }
+        .contact-card:hover { box-shadow: var(--shadow); border-color: var(--allianz-blue); transform: translateY(-3px); }
+        .contact-card i { font-size: 1.5rem; color: var(--allianz-blue); margin-bottom: 12px; }
+        .contact-card h4 { font-size: 0.85rem; font-weight: 600; color: var(--allianz-dark); margin-bottom: 4px; }
+        .contact-card p { font-size: 0.8rem; color: var(--gray-500); }
+        .contact-card a { color: var(--allianz-blue); font-weight: 500; }
+        .contact-map { width: 100%; height: 100%; min-height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+        .contact-map iframe { width: 100%; height: 100%; border: none; }
+
+        /* ===== CTA ===== */
+        .cta { padding: 80px 0; background: linear-gradient(135deg, var(--allianz-blue), var(--allianz-dark)); text-align: center; position: relative; overflow: hidden; }
+        .cta::before { content: ''; position: absolute; top: -50%; left: -50%; width: 100%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%); }
+        /* ZES star in CTA */
+        .cta-star { position: absolute; right: 5%; top: 50%; transform: translateY(-50%); width: 200px; opacity: 0.06; }
+        .cta .container { position: relative; z-index: 2; }
+        .cta h2 { font-size: 2.2rem; font-weight: 800; color: var(--white); margin-bottom: 16px; }
+        .cta p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-bottom: 36px; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .cta-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+        /* ===== FOOTER ===== */
+        .footer { background: var(--gray-900); padding: 60px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .footer-brand-logo { display: flex; flex-direction: column; gap: 16px; margin-bottom: 16px; }
+        /* ZES logo in footer */
+        .footer-zes-logo { height: 48px; filter: brightness(0) invert(1); }
+        /* Allianz logo in footer */
+        .footer-allianz-logo { height: 28px; filter: brightness(0) invert(0.4); }
+        .footer-brand > p { color: var(--gray-500); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--gray-500); transition: var(--transition); }
+        .footer-social a:hover { background: var(--allianz-blue); color: var(--white); }
+        .footer-col h4 { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 20px; }
+        .footer-col a { display: block; color: var(--gray-500); font-size: 0.85rem; padding: 6px 0; transition: var(--transition); }
+        .footer-col a:hover { color: var(--zes-accent); padding-left: 6px; }
+        .footer-bottom { padding: 24px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+        .footer-bottom p { color: var(--gray-500); font-size: 0.8rem; }
+        .footer-bottom-links { display: flex; gap: 24px; }
+        .footer-bottom-links a { color: var(--gray-500); font-size: 0.8rem; }
+        .footer-bottom-links a:hover { color: var(--zes-accent); }
+
+        /* ===== WHATSAPP FLOAT ===== */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); z-index: 999; transition: var(--transition); animation: whatsappPulse 2s infinite; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        @keyframes whatsappPulse { 0% { box-shadow: 0 6px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 6px 30px rgba(37,211,102,0.6), 0 0 0 15px rgba(37,211,102,0.1); } 100% { box-shadow: 0 6px 20px rgba(37,211,102,0.4); } }
+        .whatsapp-tooltip { position: absolute; right: 70px; background: var(--white); color: var(--gray-700); padding: 8px 16px; border-radius: 8px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; box-shadow: var(--shadow-md); opacity: 0; transition: var(--transition); pointer-events: none; }
+        .whatsapp-float:hover .whatsapp-tooltip { opacity: 1; }
+
+        /* ===== SCROLL TOP ===== */
+        .scroll-top { position: fixed; bottom: 30px; left: 30px; width: 45px; height: 45px; background: var(--allianz-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; cursor: pointer; z-index: 999; transition: var(--transition); opacity: 0; visibility: hidden; }
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { background: var(--allianz-blue); transform: translateY(-3px); }
+
+        /* ===== COOKIE ===== */
+        .cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--gray-900); padding: 20px 0; z-index: 9999; transform: translateY(100%); transition: transform 0.5s ease; }
+        .cookie-banner.show { transform: translateY(0); }
+        .cookie-content { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+        .cookie-content p { font-size: 0.85rem; color: #CBD5E1; flex: 1; }
+        .cookie-content p a { color: var(--zes-accent); text-decoration: underline; }
+        .cookie-accept { padding: 10px 24px; background: var(--allianz-blue); color: white; border: none; border-radius: 8px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: var(--transition); }
+        .cookie-accept:hover { background: var(--zes-accent); }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.4,0,0.2,1); }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
-            .hero .container {
-                grid-template-columns: 1fr;
-                gap: 60px;
-            }
-
-            .hero-visual {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-                gap: 48px;
-            }
-
-            .quote-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .product-content.active {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-main {
-                grid-template-columns: 1fr 1fr;
-            }
+            .products-grid { grid-template-columns: repeat(2,1fr); }
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content p { margin: 0 auto 36px; }
+            .hero-buttons { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .hero-allianz-badge { justify-content: center; }
+            .hero-visual { display: none; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .quote-wrapper { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
         }
-
         @media (max-width: 768px) {
-            .top-bar {
-                display: none;
-            }
-
-            .navbar .container {
-                height: 70px;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 85%;
-                max-width: 380px;
-                height: 100vh;
-                background: var(--white);
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 100px 32px 32px;
-                gap: 4px;
-                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                box-shadow: -8px 0 40px rgba(0, 0, 0, 0.15);
-                z-index: 1001;
-            }
-
-            .nav-links.open {
-                right: 0;
-            }
-
-            .nav-links li {
-                width: 100%;
-            }
-
-            .nav-links li a {
-                display: block;
-                padding: 14px 16px;
-                font-size: 1rem;
-                border-radius: var(--radius-sm);
-            }
-
-            .nav-cta {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: flex;
-            }
-
-            .hero {
-                padding: 80px 0 60px;
-                min-height: auto;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .hero-stats {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 16px;
-            }
-
-            .hero-stat-value {
-                font-size: 1.5rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .btn-hero-primary,
-            .btn-hero-secondary {
-                justify-content: center;
-            }
-
-            .section {
-                padding: 64px 0;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .quote-info,
-            .quote-form-wrapper {
-                padding: 36px 24px;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-banner {
-                padding: 48px 24px;
-                margin: 0 16px;
-                border-radius: var(--radius-xl);
-            }
-
-            .cta-banner h2 {
-                font-size: 1.8rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer-main {
-                grid-template-columns: 1fr;
-                gap: 36px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .products-tabs {
-                gap: 6px;
-            }
-
-            .product-tab {
-                padding: 10px 16px;
-                font-size: 0.8rem;
-            }
-
-            .mobile-overlay {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.5);
-                z-index: 1000;
-            }
-
-            .mobile-overlay.open {
-                display: block;
-            }
-
-            .cookie-content {
-                flex-direction: column;
-                text-align: center;
-            }
+            .nav-links { position: fixed; top: 0; right: -100%; width: 75%; height: 100vh; background: var(--white); flex-direction: column; align-items: flex-start; padding: 100px 30px 30px; gap: 4px; box-shadow: -10px 0 40px rgba(0,0,0,0.15); transition: right 0.4s ease; }
+            .nav-links.active { right: 0; }
+            .nav-links a { color: var(--gray-700) !important; font-size: 1rem; padding: 12px 16px; width: 100%; }
+            .nav-links a:hover { background: var(--allianz-light) !important; color: var(--allianz-blue) !important; }
+            .nav-toggle { display: flex; }
+            .hero-content h1 { font-size: 2.2rem; }
+            .section-title { font-size: 1.8rem; }
+            .products-grid, .why-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .about-features, .contact-cards, .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            .quote-form-card { padding: 28px; }
+            .cta h2 { font-size: 1.6rem; }
         }
-
         @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.7rem;
-            }
-
-            .hero-stats {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
-            .hero-stat-value {
-                font-size: 1.3rem;
-            }
-
-            .hero-stat-label {
-                font-size: 0.7rem;
-            }
-        }
-
-        /* Smooth scrollbar for webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--gray-100);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--gray-300);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--gray-400);
-        }
-
-        /* Counter Animation */
-        .counter {
-            display: inline-block;
+            .hero-content h1 { font-size: 1.8rem; }
+            .btn { padding: 12px 24px; font-size: 0.85rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="preloader-content">
-            <div class="preloader-logo">ZES</div>
-            <div class="preloader-bar"></div>
+<!-- ========== PRELOADER ========== -->
+<div id="preloader">
+    <div class="loader">
+        <div class="loader-logo">
+            <!-- ZES LOGO (beyaz) -->
+            <img src="zes-logo-white.png" alt="ZES Sigorta">
+        </div>
+        <div class="loader-bar"></div>
+    </div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <a href="#" class="nav-logo">
+            <!-- Sayfa üstünde: beyaz logo -->
+            <img src="zes-logo-white.png" alt="ZES Sigorta" class="logo-white">
+            <!-- Scroll sonrası: mavi logo -->
+            <img src="zes-logo-blue.png" alt="ZES Sigorta" class="logo-blue">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#urunler">Ürünlerimiz</a>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#neden-biz">Neden Biz?</a>
+            <a href="#sss">SSS</a>
+            <a href="#iletisim">İletişim</a>
+            <a href="#teklif" class="nav-cta"><i class="fas fa-file-alt"></i> Teklif Al</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
         </div>
     </div>
+</nav>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-left">
-                <a href="tel:+905360295465">
-                    <i class="fas fa-phone-alt"></i>
-                    +90 536 029 54 65
-                </a>
-                <a href="mailto:aysu@zesigorta.com.tr">
-                    <i class="fas fa-envelope"></i>
-                    aysu@zesigorta.com.tr
-                </a>
-                <a href="#">
-                    <i class="fas fa-clock"></i>
-                    Pzt - Cuma: 09:00 - 18:00
-                </a>
+<!-- ========== HERO ========== -->
+<section class="hero" id="anasayfa">
+    <div class="hero-particles" id="particles"></div>
+    <div class="container">
+        <div class="hero-content">
+            <!-- Allianz Acentesi Logo (Hero üstünde) -->
+            <div class="hero-allianz-badge">
+                <img src="allianz-logo-white.png" alt="Allianz Acentesi">
             </div>
-            <div class="top-bar-right">
-                <div class="allianz-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    Allianz Yetkili Acentesi
+            <h1>
+                Geleceğinizi<br>
+                <span class="highlight">Allianz Güvencesiyle</span><br>
+                Koruma Altına Alın
+            </h1>
+            <p>Zopluoğlu Engin Sigorta Acenteliği olarak, hayatınızın her anında yanınızdayız. Kasko'dan sağlığa, konuttan işyerine kadar tüm sigorta ihtiyaçlarınız için en uygun çözümleri sunuyoruz.</p>
+            <div class="hero-buttons">
+                <a href="#teklif" class="btn btn-primary"><i class="fas fa-file-alt"></i> Ücretsiz Teklif Al</a>
+                <a href="https://wa.me/905360295465" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp ile Ulaşın</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><h3>Allianz</h3><p>Global Güvence</p></div>
+                <div class="hero-stat"><h3>7/24</h3><p>Destek Hattı</p></div>
+                <div class="hero-stat"><h3>%100</h3><p>Müşteri Memnuniyeti</p></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-visual-inner">
+                <!-- ZES yıldız/pusula büyük arka plan -->
+                <img src="zes-star-white.png" alt="" class="hero-star-bg">
+                <div class="hero-card-stack">
+                    <div class="hero-card hero-card-1">
+                        <div class="hero-card-icon"><i class="fas fa-car"></i></div>
+                        <h4>Kasko Sigortası</h4>
+                        <p>Aracınız için kapsamlı koruma</p>
+                    </div>
+                    <div class="hero-card hero-card-2">
+                        <div class="hero-card-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h4>Sağlık Sigortası</h4>
+                        <p>Sağlığınız güvende</p>
+                    </div>
+                    <div class="hero-card hero-card-3">
+                        <div class="hero-card-icon"><i class="fas fa-home"></i></div>
+                        <h4>Konut Sigortası</h4>
+                        <p>Evinizi koruma altına alın</p>
+                    </div>
                 </div>
-                <div class="top-bar-social">
+            </div>
+        </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+    </svg>
+</section>
+
+<!-- ========== TRUST BAR ========== -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-items">
+            <!-- Allianz Acentesi Logosu -->
+            <div class="trust-item trust-item-logo">
+                <img src="allianz-logo-blue.png" alt="Allianz Acentesi">
+            </div>
+            <div class="trust-item"><i class="fas fa-award"></i> Lisanslı & Belgeli</div>
+            <div class="trust-item"><i class="fas fa-users"></i> Uzman Kadro</div>
+            <div class="trust-item"><i class="fas fa-clock"></i> Hızlı Teklif</div>
+            <div class="trust-item"><i class="fas fa-headset"></i> 7/24 Destek</div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== ÜRÜNLER ========== -->
+<section class="products" id="urunler">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="section-badge"><i class="fas fa-cubes"></i> Ürünlerimiz</span>
+            <h2 class="section-title">Sigorta Çözümlerimiz</h2>
+            <p class="section-subtitle">Allianz güvencesiyle, hayatınızın her alanı için kapsamlı sigorta çözümleri sunuyoruz.</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-car-side"></i></div>
+                <h3>Kasko Sigortası</h3>
+                <p>Aracınız için kapsamlı, mini ve eko kasko seçenekleri. Elektrikli araçlar dahil.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-id-card"></i></div>
+                <h3>Trafik Sigortası</h3>
+                <p>Zorunlu trafik sigortanızı en uygun fiyatlarla ve hızlıca yaptırın.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Sağlık Sigortası</h3>
+                <p>Tamamlayıcı, modüler ve kapsamlı özel sağlık sigortası seçenekleri.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-home"></i></div>
+                <h3>Konut Sigortası</h3>
+                <p>Evinizi yangın, hırsızlık, doğal afet ve daha birçok riske karşı koruyun.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-building"></i></div>
+                <h3>DASK</h3>
+                <p>Zorunlu deprem sigortanızı hızlı ve güvenli bir şekilde yaptırın.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-store"></i></div>
+                <h3>İşyeri Sigortası</h3>
+                <p>İşyerinizi olası tüm risklere karşı kapsamlı şekilde güvence altına alın.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-plane-departure"></i></div>
+                <h3>Seyahat Sigortası</h3>
+                <p>Yurt dışı seyahatlerinizde sağlık ve güvenlik güvenceniz.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="product-card fade-up">
+                <div class="product-icon"><i class="fas fa-piggy-bank"></i></div>
+                <h3>Bireysel Emeklilik</h3>
+                <p>BES, OKS ve tüm emeklilik planlarıyla geleceğinize yatırım yapın.</p>
+                <span class="product-link">Detaylı Bilgi <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== HAKKIMIZDA ========== -->
+<section class="about" id="hakkimizda">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image fade-up">
+                <div class="about-image-main">
+                    <!-- ZES yıldız watermark -->
+                    <img src="zes-star-blue.png" alt="" class="about-star-watermark">
+                    <!-- ZES ana logo -->
+                    <img src="zes-logo-white.png" alt="ZES Sigorta" class="about-zes-logo">
+                    <!-- Allianz Acentesi badge -->
+                    <div class="about-allianz-badge">
+                        <img src="allianz-logo-white.png" alt="Allianz Acentesi">
+                    </div>
+                </div>
+                <div class="about-float-card">
+                    <div class="about-float-icon"><i class="fas fa-handshake"></i></div>
+                    <div><h4>Güvenilir</h4><p>Allianz İş Ortağı</p></div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge"><i class="fas fa-info-circle"></i> Hakkımızda</span>
+                <h2>Zopluoğlu Engin Sigorta Acenteliği</h2>
+                <p>ZES Sigorta olarak, Allianz'ın güçlü global altyapısı ve güvencesiyle müşterilerimize en kapsamlı sigorta çözümlerini sunuyoruz. Ümraniye'deki ofisimizden İstanbul ve çevresine profesyonel sigorta danışmanlığı hizmeti veriyoruz.</p>
+                <p>Acente sahibimiz <strong>Aysu Engin</strong> liderliğinde, müşteri memnuniyetini en ön planda tutarak, her bireyin ve işletmenin ihtiyacına özel sigorta poliçeleri hazırlıyoruz.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+                        <div><h4>Kişiye Özel Poliçeler</h4><p>İhtiyacınıza uygun çözümler</p></div>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+                        <div><h4>Hızlı Hasar Desteği</h4><p>Hasar anında yanınızdayız</p></div>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+                        <div><h4>Uygun Fiyat Garantisi</h4><p>En iyi fiyat teklifleri</p></div>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+                        <div><h4>Poliçe Yenileme Hatırlatma</h4><p>Hiçbir poliçeniz geçmesin</p></div>
+                    </div>
+                </div>
+                <a href="#teklif" class="btn btn-primary"><i class="fas fa-file-alt"></i> Hemen Teklif Alın</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== NEDEN BİZ ========== -->
+<section class="why-us" id="neden-biz">
+    <div class="container">
+        <!-- ZES star decoration -->
+        <img src="zes-star-white.png" alt="" class="why-star-deco">
+        <div class="text-center fade-up">
+            <span class="section-badge"><i class="fas fa-star"></i> Neden Biz?</span>
+            <h2 class="section-title">ZES Sigorta Farkı</h2>
+            <p class="section-subtitle">Allianz'ın global gücünü, yerel uzmanlıkla birleştiriyoruz.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card fade-up">
+                <div class="why-card-number">01</div>
+                <h3>Allianz Global Güvencesi</h3>
+                <p>Dünya devinin 130 yılı aşkın tecrübesi ve finansal gücüyle, poliçeleriniz her zaman güvence altında.</p>
+            </div>
+            <div class="why-card fade-up">
+                <div class="why-card-number">02</div>
+                <h3>Kişiye Özel Danışmanlık</h3>
+                <p>Her müşterimizin ihtiyacını ayrı ayrı değerlendiriyor, en uygun sigorta paketini öneriyoruz.</p>
+            </div>
+            <div class="why-card fade-up">
+                <div class="why-card-number">03</div>
+                <h3>Hızlı & Kolay Süreç</h3>
+                <p>Teklif almadan poliçe düzenlemeye, hasar bildiriminden tazminat sürecine kadar her şey hızlı ve kolay.</p>
+            </div>
+            <div class="why-card fade-up">
+                <div class="why-card-number">04</div>
+                <h3>7/24 Destek</h3>
+                <p>Acil durumlarınızda WhatsApp ve telefon ile bize her an ulaşabilirsiniz.</p>
+            </div>
+            <div class="why-card fade-up">
+                <div class="why-card-number">05</div>
+                <h3>Rekabetçi Fiyatlar</h3>
+                <p>En kapsamlı korumayı, en uygun fiyatlarla sunuyoruz. Karşılaştırın, farkı görün.</p>
+            </div>
+            <div class="why-card fade-up">
+                <div class="why-card-number">06</div>
+                <h3>Hasar Anında Yanınızda</h3>
+                <p>Hasar durumunda tüm süreçleri sizin adınıza takip ediyor, en hızlı sonuca ulaşmanızı sağlıyoruz.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TEKLİF FORMU ========== -->
+<section class="quote" id="teklif">
+    <div class="container">
+        <div class="quote-wrapper">
+            <div class="quote-info fade-up">
+                <span class="section-badge"><i class="fas fa-file-alt"></i> Teklif Al</span>
+                <h2>Ücretsiz Sigorta Teklifi Alın</h2>
+                <p>Formu doldurun, size özel en uygun sigorta teklifini hızlıca hazırlayalım. Uzman ekibimiz en kısa sürede sizinle iletişime geçecektir.</p>
+                <div class="quote-benefits">
+                    <div class="quote-benefit">
+                        <div class="quote-benefit-icon"><i class="fas fa-bolt"></i></div>
+                        <div><h4>Hızlı Geri Dönüş</h4><p>En geç 1 saat içinde size ulaşıyoruz</p></div>
+                    </div>
+                    <div class="quote-benefit">
+                        <div class="quote-benefit-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <div><h4>Ücretsiz & Bağlayıcı Değil</h4><p>Teklif almak tamamen ücretsizdir</p></div>
+                    </div>
+                    <div class="quote-benefit">
+                        <div class="quote-benefit-icon"><i class="fas fa-lock"></i></div>
+                        <div><h4>Bilgileriniz Güvende</h4><p>KVKK kapsamında korunmaktadır</p></div>
+                    </div>
+                    <div class="quote-benefit">
+                        <div class="quote-benefit-icon"><i class="fas fa-tags"></i></div>
+                        <div><h4>En İyi Fiyat</h4><p>Size özel en uygun fiyat teklifi</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-form-card fade-up">
+                <h3>📋 Teklif Formu</h3>
+                <p>Aşağıdaki formu doldurun, sizi arayalım.</p>
+                <form id="quoteForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ad Soyad *</label>
+                            <input type="text" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefon *</label>
+                            <input type="tel" placeholder="05XX XXX XX XX" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-posta</label>
+                        <input type="email" placeholder="ornek@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Sigorta Türü *</label>
+                        <select required>
+                            <option value="">Seçiniz...</option>
+                            <option>Kasko Sigortası</option>
+                            <option>Trafik Sigortası</option>
+                            <option>Sağlık Sigortası</option>
+                            <option>Tamamlayıcı Sağlık</option>
+                            <option>Konut Sigortası</option>
+                            <option>DASK (Deprem Sigortası)</option>
+                            <option>İşyeri Sigortası</option>
+                            <option>Seyahat Sigortası</option>
+                            <option>Bireysel Emeklilik (BES)</option>
+                            <option>Hayat Sigortası</option>
+                            <option>Ferdi Kaza Sigortası</option>
+                            <option>Diğer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesajınız</label>
+                        <textarea placeholder="Teklif ile ilgili detaylarınızı yazabilirsiniz..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Teklif Talep Et
+                    </button>
+                    <div class="form-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        Bilgileriniz KVKK kapsamında korunmakta, üçüncü kişilerle paylaşılmamaktadır.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== MÜŞTERİ YORUMLARI ========== -->
+<section class="testimonials">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="section-badge"><i class="fas fa-comments"></i> Müşteri Yorumları</span>
+            <h2 class="section-title">Müşterilerimiz Ne Diyor?</h2>
+            <p class="section-subtitle">Müşteri memnuniyeti bizim için her şeyden önemli.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-up">
+                <!-- ZES yıldız ikonları (5 adet) -->
+                <div class="testimonial-stars">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                </div>
+                <p>"Kasko poliçemi yenilerken çok hızlı ve uygun fiyat teklifi aldım. Aysu Hanım her aşamada bilgilendirdi. Kesinlikle tavsiye ederim!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MK</div>
+                    <div><h4>Mehmet K.</h4><p>Kasko Müşterisi</p></div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-up">
+                <div class="testimonial-stars">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                </div>
+                <p>"Sağlık sigortamızda hasar sürecinde çok destek oldular. Her seferinde profesyonel ve güler yüzlü yaklaşımlarıyla fark yaratıyorlar."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">AY</div>
+                    <div><h4>Ayşe Y.</h4><p>Sağlık Sigortası Müşterisi</p></div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-up">
+                <div class="testimonial-stars">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                    <img src="zes-star-blue.png" alt="★" class="zes-star">
+                </div>
+                <p>"İşyeri sigortamız için en uygun paketi buldular. Poliçe yenileme hatırlatmaları da çok işimize yarıyor. Teşekkürler ZES Sigorta!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">CB</div>
+                    <div><h4>Can B.</h4><p>İşyeri Sigortası Müşterisi</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SSS ========== -->
+<section class="faq" id="sss">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="section-badge"><i class="fas fa-question-circle"></i> SSS</span>
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <p class="section-subtitle">Merak ettiğiniz soruların yanıtlarını burada bulabilirsiniz.</p>
+        </div>
+        <div class="faq-list fade-up">
+            <div class="faq-item active">
+                <div class="faq-question" onclick="toggleFaq(this)">Kasko sigortası neleri kapsar? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Kasko sigortası aracınızı çarpma, çarpışma, yanma, çalınma, doğal afetler ve üçüncü şahısların vereceği zararlara karşı korur. Allianz Kasko ile kapsamlı, mini ve eko paketler arasından ihtiyacınıza en uygun olanı seçebilirsiniz.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Trafik sigortası yaptırmak zorunlu mu? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Evet, trafik sigortası (Zorunlu Mali Mesuliyet Sigortası) yasal olarak zorunludur. Aracınızın trafiğe çıkabilmesi için mutlaka trafik sigortasının yaptırılmış olması gerekmektedir.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">DASK (Deprem Sigortası) nedir ve zorunlu mudur? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>DASK (Doğal Afet Sigortaları Kurumu), konutunuzu deprem riskine karşı koruyan zorunlu bir sigortadır. Tapulu tüm konutlar için DASK yaptırmak zorunludur ve konut sigortası için de ön koşuldur.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Tamamlayıcı sağlık sigortası nedir? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Tamamlayıcı sağlık sigortası, SGK'nın karşıladığı tedavi masrafları dışında kalan farkları karşılayan bir sigorta ürünüdür. Allianz TSS ile anlaşmalı hastanelerde ekonomik fiyatlarla özel sağlık hizmeti alabilirsiniz.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Teklif almak ücretli mi? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Hayır, teklif almak tamamen ücretsiz ve bağlayıcı değildir. Formu doldurmanız veya bizi aramanız yeterlidir. Size en uygun sigorta teklifini hazırlayarak sunuyoruz.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">Hasar durumunda ne yapmalıyım? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Hasar durumunda hemen bizi arayın veya WhatsApp'tan ulaşın. Allianz hasar hattı 0850 399 0 399 numarasını da arayabilirsiniz. Hasar bildirimi ve tüm takip süreçlerinde sizin yanınızdayız.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta">
+    <!-- ZES star decoration -->
+    <img src="zes-star-white.png" alt="" class="cta-star">
+    <div class="container">
+        <h2>Sigorta İhtiyaçlarınız İçin<br>Hemen Bize Ulaşın!</h2>
+        <p>Allianz güvencesiyle, en uygun sigorta teklifini hemen alın.</p>
+        <div class="cta-buttons">
+            <a href="tel:+905360295465" class="btn btn-white"><i class="fas fa-phone-alt"></i> Hemen Arayın</a>
+            <a href="https://wa.me/905360295465" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp ile Yazın</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== İLETİŞİM ========== -->
+<section class="contact" id="iletisim">
+    <div class="container">
+        <div class="text-center fade-up">
+            <span class="section-badge"><i class="fas fa-map-marker-alt"></i> İletişim</span>
+            <h2 class="section-title">Bize Ulaşın</h2>
+            <p class="section-subtitle">Ümraniye ofisimizde sizleri ağırlamaktan mutluluk duyarız.</p>
+        </div>
+        <div class="contact-grid fade-up">
+            <div>
+                <div class="contact-cards">
+                    <a href="tel:+905360295465" class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Telefon</h4>
+                        <p>+90 536 029 54 65</p>
+                    </a>
+                    <a href="https://wa.me/905360295465" target="_blank" class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p>+90 536 029 54 65</p>
+                    </a>
+                    <a href="mailto:aysu@zesigorta.com.tr" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>E-posta</h4>
+                        <p>aysu@zesigorta.com.tr</p>
+                    </a>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Çalışma Saatleri</h4>
+                        <p>Hafta içi: 09:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="contact-card" style="text-align:left; padding:28px;">
+                    <i class="fas fa-map-marker-alt" style="margin-bottom:8px; display:block; font-size:1.5rem; color:var(--allianz-blue);"></i>
+                    <h4 style="font-size:1rem; margin-bottom:8px; color:var(--allianz-dark);">Adresimiz</h4>
+                    <p style="font-size:0.9rem; line-height:1.8; color:var(--gray-600);">
+                        Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti.<br>
+                        Çamlık Mah. Şehit Burak Kurtuluş Cad.<br>
+                        Caspian Modern AVM No:60/74 B:2<br>
+                        Ümraniye / İSTANBUL
+                    </p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.271!2d29.1182!3d41.0245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac89ba5b7d15d%3A0x4e8f1b1e2b2d1a0!2sCaspian%20Modern%20AVM!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-brand-logo">
+                    <!-- ZES logo (beyaz) -->
+                    <img src="zes-logo-white.png" alt="ZES Sigorta" class="footer-zes-logo">
+                    <!-- Allianz Acentesi logo (soluk beyaz) -->
+                    <img src="allianz-logo-white.png" alt="Allianz Acentesi" class="footer-allianz-logo">
+                </div>
+                <p>Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti. - Allianz güvencesiyle tüm sigorta ihtiyaçlarınız için profesyonel çözümler sunuyoruz.</p>
+                <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Menü</h4>
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#urunler">Ürünlerimiz</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#neden-biz">Neden Biz?</a>
+                <a href="#teklif">Teklif Al</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h4>Sigorta Ürünleri</h4>
+                <a href="#urunler">Kasko Sigortası</a>
+                <a href="#urunler">Trafik Sigortası</a>
+                <a href="#urunler">Sağlık Sigortası</a>
+                <a href="#urunler">Konut Sigortası</a>
+                <a href="#urunler">DASK</a>
+                <a href="#urunler">İşyeri Sigortası</a>
+                <a href="#urunler">Seyahat Sigortası</a>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <a href="tel:+905360295465"><i class="fas fa-phone-alt"></i> +90 536 029 54 65</a>
+                <a href="mailto:aysu@zesigorta.com.tr"><i class="fas fa-envelope"></i> aysu@zesigorta.com.tr</a>
+                <a href="#iletisim"><i class="fas fa-map-marker-alt"></i> Ümraniye / İstanbul</a>
+                <a href="https://www.zesigorta.com.tr"><i class="fas fa-globe"></i> www.zesigorta.com.tr</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZES Sigorta - Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti. Tüm hakları saklıdır.</p>
+            <div class="footer-bottom-links">
+                <a href="#">KVKK Aydınlatma Metni</a>
+                <a href="#">Çerez Politikası</a>
+                <a href="#">Gizlilik Politikası</a>
             </div>
         </div>
     </div>
+</footer>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#" class="nav-brand">
-                <div class="nav-logo-icon">
-                    <div class="compass-star">
-                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L54 42 L50 46 L46 42 Z" fill="#003781"/>
-                            <path d="M100 50 L58 54 L54 50 L58 46 Z" fill="#003781"/>
-                            <path d="M50 100 L46 58 L50 54 L54 58 Z" fill="#003781"/>
-                            <path d="M0 50 L42 46 L46 50 L42 54 Z" fill="#003781"/>
-                            <path d="M85 15 L56 44 L54 42 L56 40 Z" fill="#003781" opacity="0.4"/>
-                            <path d="M85 85 L56 56 L58 54 L60 56 Z" fill="#003781" opacity="0.4"/>
-                            <path d="M15 85 L44 56 L46 58 L44 60 Z" fill="#003781" opacity="0.4"/>
-                            <path d="M15 15 L44 44 L42 46 L40 44 Z" fill="#003781" opacity="0.4"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="nav-logo-text">
-                    <span class="nav-logo-zes">ZES</span>
-                    <span class="nav-logo-sub">Zopluoğlu Engin Sigorta</span>
-                </div>
-            </a>
+<!-- ========== WHATSAPP FLOAT ========== -->
+<a href="https://wa.me/905360295465?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum." target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Bize yazın! 💬</span>
+</a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#anasayfa" class="active">Ana Sayfa</a></li>
-                <li><a href="#hizmetler">Hizmetler</a></li>
-                <li><a href="#urunler">Ürünler</a></li>
-                <li><a href="#hakkimizda">Hakkımızda</a></li>
-                <li><a href="#ekibimiz">Ekibimiz</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
-            </ul>
+<!-- ========== SCROLL TOP ========== -->
+<div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+    <i class="fas fa-chevron-up"></i>
+</div>
 
-            <div class="nav-cta">
-                <a href="tel:+905360295465" class="btn-nav-secondary">
-                    <i class="fas fa-phone-alt"></i> Bizi Arayın
-                </a>
-                <a href="#teklif" class="btn-nav-primary">
-                    <i class="fas fa-file-alt"></i> Teklif Al
-                </a>
-            </div>
-
-            <button class="mobile-toggle" id="mobileToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <!-- Hero -->
-    <section class="hero" id="anasayfa">
-        <div class="hero-bg-pattern"></div>
-        <div class="hero-grid-lines"></div>
-        <div class="hero-floating-shapes">
-            <div class="hero-shape hero-shape-1"></div>
-            <div class="hero-shape hero-shape-2"></div>
-            <div class="hero-shape hero-shape-3"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="hero-badge-dot"></span>
-                    Allianz Yetkili Acentesi
-                </div>
-                <h1>
-                    Geleceğinizi<br>
-                    <span class="highlight">Güvence Altına</span><br>
-                    Alıyoruz
-                </h1>
-                <p>
-                    Zopluoğlu Engin Sigorta olarak, Allianz'ın güçlü teminatlarıyla 
-                    ailenizi, işinizi ve varlıklarınızı en kapsamlı şekilde koruyoruz.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#teklif" class="btn-hero-primary">
-                        <i class="fas fa-file-alt"></i>
-                        Ücretsiz Teklif Al
-                    </a>
-                    <a href="#hizmetler" class="btn-hero-secondary">
-                        <i class="fas fa-play-circle"></i>
-                        Hizmetlerimiz
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-value"><span class="counter" data-target="1500">0</span>+</div>
-                        <div class="hero-stat-label">Mutlu Müşteri</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-value"><span class="counter" data-target="15">0</span>+</div>
-                        <div class="hero-stat-label">Yıllık Deneyim</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-value">%<span class="counter" data-target="99">0</span></div>
-                        <div class="hero-stat-label">Memnuniyet</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="hero-cards-wrapper">
-                    <div class="hero-card hero-card-1">
-                        <div class="hero-card-icon">
-                            <i class="fas fa-car"></i>
-                        </div>
-                        <div class="hero-card-title">Araç Sigortası</div>
-                        <div class="hero-card-desc">Kasko ve trafik sigortası ile aracınız güvende</div>
-                    </div>
-                    <div class="hero-card hero-card-2">
-                        <div class="hero-card-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <div class="hero-card-title">Sağlık Sigortası</div>
-                        <div class="hero-card-desc">Siz ve aileniz için kapsamlı sağlık güvencesi</div>
-                    </div>
-                    <div class="hero-card hero-card-3">
-                        <div class="hero-card-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="hero-card-title">Konut Sigortası</div>
-                        <div class="hero-card-desc">Evinizi her türlü riske karşı koruyun</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Ticker -->
-    <div class="partners-ticker">
-        <div class="partners-ticker-label">Allianz Güvencesiyle Sunduğumuz Ürünler</div>
-        <div class="ticker-track">
-            <div class="ticker-item">🚗 Kasko Sigortası</div>
-            <div class="ticker-item">🛡️ Trafik Sigortası</div>
-            <div class="ticker-item">🏥 Sağlık Sigortası</div>
-            <div class="ticker-item">🏠 Konut Sigortası</div>
-            <div class="ticker-item">🏢 İşyeri Sigortası</div>
-            <div class="ticker-item">✈️ Seyahat Sigortası</div>
-            <div class="ticker-item">⚕️ Tamamlayıcı Sağlık</div>
-            <div class="ticker-item">🔥 Yangın Sigortası</div>
-            <div class="ticker-item">🚗 Kasko Sigortası</div>
-            <div class="ticker-item">🛡️ Trafik Sigortası</div>
-            <div class="ticker-item">🏥 Sağlık Sigortası</div>
-            <div class="ticker-item">🏠 Konut Sigortası</div>
-            <div class="ticker-item">🏢 İşyeri Sigortası</div>
-            <div class="ticker-item">✈️ Seyahat Sigortası</div>
-            <div class="ticker-item">⚕️ Tamamlayıcı Sağlık</div>
-            <div class="ticker-item">🔥 Yangın Sigortası</div>
-        </div>
-    </div>
-
-    <!-- Services -->
-    <section class="section" id="hizmetler">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="section-label">
-                    <i class="fas fa-shield-alt"></i>
-                    Hizmetlerimiz
-                </div>
-                <h2 class="section-title">Kapsamlı Sigorta Çözümleri</h2>
-                <p class="section-desc">
-                    Allianz'ın güçlü ürün yelpazesiyle ihtiyacınıza en uygun sigorta çözümlerini sunuyoruz.
-                </p>
-            </div>
-
-            <div class="services-grid">
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="service-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h3 class="service-title">Kasko Sigortası</h3>
-                    <p class="service-desc">Aracınızı kaza, hırsızlık, doğal afet ve diğer tüm risklere karşı kapsamlı şekilde koruyun.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.2s;">
-                    <div class="service-icon">
-                        <i class="fas fa-id-card"></i>
-                    </div>
-                    <h3 class="service-title">Trafik Sigortası</h3>
-                    <p class="service-desc">Zorunlu trafik sigortanızı en uygun fiyatlarla hızlıca oluşturun ve güvenle yola çıkın.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.3s;">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3 class="service-title">Sağlık Sigortası</h3>
-                    <p class="service-desc">Siz ve aileniz için özel sağlık sigortası planlarıyla kaliteli sağlık hizmetine erişin.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.4s;">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3 class="service-title">Konut Sigortası</h3>
-                    <p class="service-desc">Evinizi yangın, hırsızlık, su hasarı ve doğal afetlere karşı güvence altına alın.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.5s;">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3 class="service-title">İşyeri Sigortası</h3>
-                    <p class="service-desc">İşletmenizi olası risklere karşı koruyun, işinize güvenle odaklanın.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.6s;">
-                    <div class="service-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <h3 class="service-title">Seyahat Sigortası</h3>
-                    <p class="service-desc">Yurt içi ve yurt dışı seyahatlerinizde sağlık ve bagaj güvencesi sağlayın.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.7s;">
-                    <div class="service-icon">
-                        <i class="fas fa-medkit"></i>
-                    </div>
-                    <h3 class="service-title">Tamamlayıcı Sağlık</h3>
-                    <p class="service-desc">SGK'yı tamamlayan özel sağlık sigortası ile fark ücretlerinden kurtulun.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-
-                <a href="#teklif" class="service-card fade-up" style="transition-delay: 0.8s;">
-                    <div class="service-icon">
-                        <i class="fas fa-fire-alt"></i>
-                    </div>
-                    <h3 class="service-title">DASK / Deprem</h3>
-                    <p class="service-desc">Zorunlu deprem sigortanızı hızlıca yapın, konutunuzu deprem riskine karşı koruyun.</p>
-                    <span class="service-link">Teklif Al <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Us -->
-    <section class="section section-dark" id="hakkimizda">
-        <div class="container">
-            <div class="why-grid">
-                <div class="why-image fade-left">
-                    <div class="why-image-main">
-                        <div class="compass-star-big">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 0 L54 42 L50 46 L46 42 Z" fill="white"/>
-                                <path d="M100 50 L58 54 L54 50 L58 46 Z" fill="white"/>
-                                <path d="M50 100 L46 58 L50 54 L54 58 Z" fill="white"/>
-                                <path d="M0 50 L42 46 L46 50 L42 54 Z" fill="white"/>
-                                <path d="M85 15 L56 44 L54 42 L56 40 Z" fill="white" opacity="0.4"/>
-                                <path d="M85 85 L56 56 L58 54 L60 56 Z" fill="white" opacity="0.4"/>
-                                <path d="M15 85 L44 56 L46 58 L44 60 Z" fill="white" opacity="0.4"/>
-                                <path d="M15 15 L44 44 L42 46 L40 44 Z" fill="white" opacity="0.4"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="why-image-badge">
-                        <div class="why-image-badge-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="why-image-badge-text">
-                            <h4>15+ Yıl</h4>
-                            <p>Sektör Deneyimi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="why-content fade-right">
-                    <div class="section-label">
-                        <i class="fas fa-star"></i>
-                        Neden ZES Sigorta?
-                    </div>
-                    <h2 class="section-title">Güvenilir Sigorta Çözüm Ortağınız</h2>
-                    <p class="section-desc">
-                        Zopluoğlu Engin Sigorta olarak, Allianz'ın global gücünü 
-                        yerel uzmanlığımızla birleştirerek size en iyi hizmeti sunuyoruz.
-                    </p>
-
-                    <div class="why-features">
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Allianz Güvencesi</h4>
-                                <p>Dünyanın en büyük sigorta şirketlerinden birinin yetkili acentesi olarak hizmet veriyoruz.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div>
-                                <h4>Kişisel Danışmanlık</h4>
-                                <p>Her müşterimize özel, ihtiyaca uygun sigorta çözümleri üretiyoruz.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div>
-                                <h4>Hızlı Hasar Yönetimi</h4>
-                                <p>Hasar anında yanınızda, hızlı ve kolay hasar süreç yönetimi sağlıyoruz.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <i class="fas fa-hand-holding-usd"></i>
-                            </div>
-                            <div>
-                                <h4>Uygun Fiyat Garantisi</h4>
-                                <p>En uygun primlere en kapsamlı teminatları sunarak bütçenizi koruyoruz.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Detail -->
-    <section class="section" id="urunler">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="section-label">
-                    <i class="fas fa-box-open"></i>
-                    Ürünlerimiz
-                </div>
-                <h2 class="section-title">Sigorta Ürünlerimiz</h2>
-                <p class="section-desc">
-                    İhtiyacınıza uygun sigorta ürünlerini detaylı inceleyip hemen teklif alabilirsiniz.
-                </p>
-            </div>
-
-            <div class="products-tabs fade-up">
-                <button class="product-tab active" data-product="kasko">
-                    <i class="fas fa-car"></i> Kasko
-                </button>
-                <button class="product-tab" data-product="trafik">
-                    <i class="fas fa-id-card"></i> Trafik
-                </button>
-                <button class="product-tab" data-product="saglik">
-                    <i class="fas fa-heartbeat"></i> Sağlık
-                </button>
-                <button class="product-tab" data-product="konut">
-                    <i class="fas fa-home"></i> Konut
-                </button>
-                <button class="product-tab" data-product="dask">
-                    <i class="fas fa-fire-alt"></i> DASK
-                </button>
-            </div>
-
-            <div class="product-content active" id="product-kasko">
-                <div class="product-info fade-left">
-                    <h3>Kasko Sigortası</h3>
-                    <p>Aracınızı kaza, hırsızlık, doğal afetler ve daha birçok riske karşı kapsamlı olarak koruma altına alın. Allianz Kasko ile yolda güvenle ilerleyin.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check-circle"></i> Tam ve dar kasko seçenekleri</li>
-                        <li><i class="fas fa-check-circle"></i> Anlaşmalı servis ağı</li>
-                        <li><i class="fas fa-check-circle"></i> 7/24 yol yardım hizmeti</li>
-                        <li><i class="fas fa-check-circle"></i> İkame araç hizmeti</li>
-                        <li><i class="fas fa-check-circle"></i> Mini onarım hizmeti</li>
-                        <li><i class="fas fa-check-circle"></i> Hızlı hasar ödemesi</li>
-                    </ul>
-                    <a href="#teklif" class="btn-product">
-                        <i class="fas fa-file-alt"></i> Teklif Al
-                    </a>
-                </div>
-                <div class="product-visual fade-right">
-                    <div class="product-illustration">🚗</div>
-                </div>
-            </div>
-
-            <div class="product-content" id="product-trafik">
-                <div class="product-info fade-left">
-                    <h3>Trafik Sigortası</h3>
-                    <p>Zorunlu trafik sigortanızı Allianz güvencesiyle en uygun fiyatlarla hızlıca oluşturun. Yasal zorunluluğunuzu kolayca karşılayın.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check-circle"></i> En uygun prim fiyatları</li>
-                        <li><i class="fas fa-check-circle"></i> Online poliçe kesimi</li>
-                        <li><i class="fas fa-check-circle"></i> Hızlı hasar süreçleri</li>
-                        <li><i class="fas fa-check-circle"></i> Geniş servis ağı</li>
-                        <li><i class="fas fa-check-circle"></i> Taksit imkanı</li>
-                    </ul>
-                    <a href="#teklif" class="btn-product">
-                        <i class="fas fa-file-alt"></i> Teklif Al
-                    </a>
-                </div>
-                <div class="product-visual fade-right">
-                    <div class="product-illustration">🛡️</div>
-                </div>
-            </div>
-
-            <div class="product-content" id="product-saglik">
-                <div class="product-info fade-left">
-                    <h3>Sağlık Sigortası</h3>
-                    <p>Allianz özel sağlık sigortası ile siz ve aileniz en kaliteli sağlık hizmetlerine öncelikli olarak erişin. Tamamlayıcı ve bireysel seçeneklerimizi keşfedin.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check-circle"></i> Geniş anlaşmalı hastane ağı</li>
-                        <li><i class="fas fa-check-circle"></i> Yatarak ve ayakta tedavi</li>
-                        <li><i class="fas fa-check-circle"></i> Check-up hizmeti</li>
-                        <li><i class="fas fa-check-circle"></i> Tamamlayıcı sağlık seçeneği</li>
-                        <li><i class="fas fa-check-circle"></i> Doğum teminatı</li>
-                        <li><i class="fas fa-check-circle"></i> Diş tedavi teminatı</li>
-                    </ul>
-                    <a href="#teklif" class="btn-product">
-                        <i class="fas fa-file-alt"></i> Teklif Al
-                    </a>
-                </div>
-                <div class="product-visual fade-right">
-                    <div class="product-illustration">🏥</div>
-                </div>
-            </div>
-
-            <div class="product-content" id="product-konut">
-                <div class="product-info fade-left">
-                    <h3>Konut Sigortası</h3>
-                    <p>Evinizi ve eşyalarınızı yangın, hırsızlık, su basması ve doğal afetlere karşı güvence altına alın. Allianz konut sigortası ile eviniz her zaman güvende.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check-circle"></i> Bina ve eşya güvencesi</li>
-                        <li><i class="fas fa-check-circle"></i> Hırsızlık teminatı</li>
-                        <li><i class="fas fa-check-circle"></i> Su hasarı koruması</li>
-                        <li><i class="fas fa-check-circle"></i> Cam kırılması teminatı</li>
-                        <li><i class="fas fa-check-circle"></i> Elektronik cihaz koruması</li>
-                        <li><i class="fas fa-check-circle"></i> Sorumluluk teminatı</li>
-                    </ul>
-                    <a href="#teklif" class="btn-product">
-                        <i class="fas fa-file-alt"></i> Teklif Al
-                    </a>
-                </div>
-                <div class="product-visual fade-right">
-                    <div class="product-illustration">🏠</div>
-                </div>
-            </div>
-
-            <div class="product-content" id="product-dask">
-                <div class="product-info fade-left">
-                    <h3>DASK - Zorunlu Deprem Sigortası</h3>
-                    <p>Türkiye'de yaşayan herkes için zorunlu olan deprem sigortanızı hızlıca yaptırın. Konutunuzu deprem riskine karşı güvence altına alın.</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check-circle"></i> Zorunlu deprem teminatı</li>
-                        <li><i class="fas fa-check-circle"></i> Hızlı poliçe kesimi</li>
-                        <li><i class="fas fa-check-circle"></i> Uygun prim fiyatları</li>
-                        <li><i class="fas fa-check-circle"></i> Online başvuru imkanı</li>
-                        <li><i class="fas fa-check-circle"></i> Kolay yenileme</li>
-                    </ul>
-                    <a href="#teklif" class="btn-product">
-                        <i class="fas fa-file-alt"></i> Teklif Al
-                    </a>
-                </div>
-                <div class="product-visual fade-right">
-                    <div class="product-illustration">🔥</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Quote -->
-    <section class="section section-dark" id="teklif">
-        <div class="container">
-            <div class="quote-grid fade-up">
-                <div class="quote-info">
-                    <h3>Hemen Teklif Alın</h3>
-                    <p>
-                        Formu doldurun, size en uygun sigorta teklifini en kısa sürede iletilim. 
-                        Ücretsiz ve bağlayıcı değildir.
-                    </p>
-                    <ul class="quote-benefits">
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Ücretsiz ve bağlayıcı değil
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            30 dakika içinde geri dönüş
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            En uygun fiyat garantisi
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Kişiye özel sigorta planı
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Allianz kalite güvencesi
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Taksitli ödeme seçenekleri
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="quote-form-wrapper">
-                    <h3>İletişim & Teklif Formu</h3>
-                    <p>Bilgilerinizi girin, sizi arayalım.</p>
-
-                    <form id="quoteForm" action="#" method="POST">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">Ad Soyad *</label>
-                                <input type="text" class="form-input" placeholder="Adınız Soyadınız" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Telefon *</label>
-                                <input type="tel" class="form-input" placeholder="0(5XX) XXX XX XX" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">E-posta</label>
-                                <input type="email" class="form-input" placeholder="ornek@email.com">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Sigorta Türü *</label>
-                                <select class="form-select" required>
-                                    <option value="">Seçiniz</option>
-                                    <option value="kasko">Kasko Sigortası</option>
-                                    <option value="trafik">Trafik Sigortası</option>
-                                    <option value="saglik">Sağlık Sigortası</option>
-                                    <option value="konut">Konut Sigortası</option>
-                                    <option value="isyeri">İşyeri Sigortası</option>
-                                    <option value="seyahat">Seyahat Sigortası</option>
-                                    <option value="tamamlayici">Tamamlayıcı Sağlık</option>
-                                    <option value="dask">DASK / Deprem</option>
-                                    <option value="diger">Diğer</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Mesajınız</label>
-                            <textarea class="form-textarea" placeholder="Sigorta ihtiyacınız hakkında kısa bilgi verebilirsiniz..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-form-submit">
-                            <i class="fas fa-paper-plane"></i>
-                            Teklif Talep Et
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section section-blue">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="section-label">
-                    <i class="fas fa-quote-right"></i>
-                    Müşteri Yorumları
-                </div>
-                <h2 class="section-title">Müşterilerimiz Ne Diyor?</h2>
-                <p class="section-desc">
-                    Binlerce mutlu müşterimizin güvenini kazandık
-                </p>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "ZES Sigorta ile kasko poliçemi yaptırdım. Hem fiyat hem de hizmet kalitesi açısından çok memnunum. Hasar sürecinde de yanımda oldular."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MK</div>
-                        <div>
-                            <div class="testimonial-name">Mehmet Kaya</div>
-                            <div class="testimonial-role">Kasko Müşterisi</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card fade-up" style="transition-delay: 0.2s;">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Ailece sağlık sigortamızı ZES Sigorta üzerinden yaptırdık. Aysu Hanım'ın ilgisi ve bilgisi sayesinde tam ihtiyacımıza uygun planı bulduk."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SY</div>
-                        <div>
-                            <div class="testimonial-name">Selin Yılmaz</div>
-                            <div class="testimonial-role">Sağlık Sigortası Müşterisi</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card fade-up" style="transition-delay: 0.3s;">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "İşyeri sigortamızı Allianz ile ZES acentesinden yaptırdık. Profesyonel yaklaşımları ve hızlı çözümleri ile her zaman güvenebileceğimiz bir partner bulduk."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">AÖ</div>
-                        <div>
-                            <div class="testimonial-name">Ahmet Özdemir</div>
-                            <div class="testimonial-role">İşyeri Sigortası Müşterisi</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section class="section" id="ekibimiz">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="section-label">
-                    <i class="fas fa-users"></i>
-                    Ekibimiz
-                </div>
-                <h2 class="section-title">Profesyonel Kadromuz</h2>
-                <p class="section-desc">
-                    Deneyimli ekibimiz ile size en iyi sigorta danışmanlığını sunuyoruz
-                </p>
-            </div>
-
-            <div class="team-grid">
-                <div class="team-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="team-card-header">
-                        <div class="team-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="team-name">Aysu Engin</h3>
-                        <p class="team-role">Acente Sahibi</p>
-                    </div>
-                    <div class="team-card-body">
-                        <div class="team-contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <a href="tel:+905360295465">+90 536 029 54 65</a>
-                        </div>
-                        <div class="team-contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:aysu@zesigorta.com.tr">aysu@zesigorta.com.tr</a>
-                        </div>
-                        <div class="team-contact-item">
-                            <i class="fab fa-whatsapp"></i>
-                            <a href="https://wa.me/905360295465" target="_blank">WhatsApp ile yazın</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-card fade-up" style="transition-delay: 0.2s;">
-                    <div class="team-card-header">
-                        <div class="team-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="team-name">Arda Engin</h3>
-                        <p class="team-role">Acente Sahibi</p>
-                    </div>
-                    <div class="team-card-body">
-                        <div class="team-contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <a href="tel:+905300356488">+90 530 035 64 88</a>
-                        </div>
-                        <div class="team-contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:arda@zesigorta.com.tr">arda@zesigorta.com.tr</a>
-                        </div>
-                        <div class="team-contact-item">
-                            <i class="fab fa-whatsapp"></i>
-                            <a href="https://wa.me/905300356488" target="_blank">WhatsApp ile yazın</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section section-dark" id="iletisim">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="section-label">
-                    <i class="fas fa-map-marker-alt"></i>
-                    İletişim
-                </div>
-                <h2 class="section-title">Bize Ulaşın</h2>
-                <p class="section-desc">
-                    Sigorta ihtiyaçlarınız için bize her zaman ulaşabilirsiniz
-                </p>
-            </div>
-
-            <div class="contact-grid fade-up">
-                <div class="contact-info-cards">
-                    <div class="contact-info-card">
-                        <div class="contact-info-card-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h4>Şirket Bilgileri</h4>
-                        <p>
-                            Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti.<br>
-                            <small style="color: var(--allianz-blue); font-weight: 600;">Allianz Yetkili Acentesi</small>
-                        </p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-info-card-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h4>Adresimiz</h4>
-                        <p>
-                            Çamlık Mah. Şehit Burak Kurtuluş Cad.<br>
-                            Caspian Modern AVM No:60/74 B:2<br>
-                            Ümraniye / İSTANBUL
-                        </p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-info-card-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h4>Telefon</h4>
-                        <p>
-                            <a href="tel:+905360295465">+90 536 029 54 65</a> (Aysu Engin)<br>
-                            <a href="tel:+905300356488">+90 530 035 64 88</a> (Arda Engin)
-                        </p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-info-card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h4>E-posta</h4>
-                        <p>
-                            <a href="mailto:aysu@zesigorta.com.tr">aysu@zesigorta.com.tr</a><br>
-                            <a href="mailto:arda@zesigorta.com.tr">arda@zesigorta.com.tr</a>
-                        </p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-info-card-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <h4>Web Sitesi</h4>
-                        <p>
-                            <a href="https://www.zesigorta.com.tr" target="_blank">www.zesigorta.com.tr</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.123456789!2d29.12!3d41.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzM2LjAiTiAyOcKwMDcnMTIuMCJF!5e0!3m2!1str!2str!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section class="section">
-        <div class="container-sm">
-            <div class="cta-banner fade-up">
-                <h2>Sigorta İhtiyacınız İçin<br>Hemen Bizi Arayın</h2>
-                <p>
-                    Uzman danışmanlarımız size en uygun sigorta çözümünü sunmak için hazır. 
-                    Ücretsiz danışmanlık hizmetimizden yararlanın.
-                </p>
-                <div class="cta-buttons">
-                    <a href="tel:+905360295465" class="btn-cta-primary">
-                        <i class="fas fa-phone-alt"></i>
-                        Hemen Arayın
-                    </a>
-                    <a href="https://wa.me/905360295465" target="_blank" class="btn-cta-secondary">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp'tan Yazın
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="compass-star">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-                                <path d="M50 0 L54 42 L50 46 L46 42 Z" fill="white"/>
-                                <path d="M100 50 L58 54 L54 50 L58 46 Z" fill="white"/>
-                                <path d="M50 100 L46 58 L50 54 L54 58 Z" fill="white"/>
-                                <path d="M0 50 L42 46 L46 50 L42 54 Z" fill="white"/>
-                                <path d="M85 15 L56 44 L54 42 L56 40 Z" fill="white" opacity="0.4"/>
-                                <path d="M85 85 L56 56 L58 54 L60 56 Z" fill="white" opacity="0.4"/>
-                                <path d="M15 85 L44 56 L46 58 L44 60 Z" fill="white" opacity="0.4"/>
-                                <path d="M15 15 L44 44 L42 46 L40 44 Z" fill="white" opacity="0.4"/>
-                            </svg>
-                        </div>
-                        <span class="footer-logo-text">ZES</span>
-                    </div>
-                    <p>
-                        Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti. olarak Allianz güvencesiyle 
-                        sigorta hizmetleri sunuyoruz. Güvenilir, hızlı ve kişiye özel çözümlerimizle 
-                        her zaman yanınızdayız.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="https://wa.me/905360295465" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Ürünlerimiz</h4>
-                    <ul>
-                        <li><a href="#urunler">Kasko Sigortası</a></li>
-                        <li><a href="#urunler">Trafik Sigortası</a></li>
-                        <li><a href="#urunler">Sağlık Sigortası</a></li>
-                        <li><a href="#urunler">Konut Sigortası</a></li>
-                        <li><a href="#urunler">İşyeri Sigortası</a></li>
-                        <li><a href="#urunler">Seyahat Sigortası</a></li>
-                        <li><a href="#urunler">DASK</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Kurumsal</h4>
-                    <ul>
-                        <li><a href="#hakkimizda">Hakkımızda</a></li>
-                        <li><a href="#ekibimiz">Ekibimiz</a></li>
-                        <li><a href="#hizmetler">Hizmetlerimiz</a></li>
-                        <li><a href="#iletisim">İletişim</a></li>
-                        <li><a href="#">Gizlilik Politikası</a></li>
-                        <li><a href="#">KVKK Aydınlatma</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>İletişim</h4>
-                    <ul>
-                        <li>
-                            <a href="tel:+905360295465">
-                                <i class="fas fa-phone-alt" style="width: 16px;"></i>
-                                +90 536 029 54 65
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+905300356488">
-                                <i class="fas fa-phone-alt" style="width: 16px;"></i>
-                                +90 530 035 64 88
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:aysu@zesigorta.com.tr">
-                                <i class="fas fa-envelope" style="width: 16px;"></i>
-                                aysu@zesigorta.com.tr
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.zesigorta.com.tr" target="_blank">
-                                <i class="fas fa-globe" style="width: 16px;"></i>
-                                www.zesigorta.com.tr
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-map-marker-alt" style="width: 16px;"></i>
-                                Ümraniye / İSTANBUL
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 ZES Sigorta - Zopluoğlu Engin Sigorta Acenteliği Ltd. Şti. Tüm hakları saklıdır.</p>
-                <div class="footer-allianz-badge">
-                    <span class="allianz-text">Allianz</span> Yetkili Acentesi
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top -->
-    <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- WhatsApp Float -->
-    <div class="whatsapp-float">
-        <a href="https://wa.me/905360295465?text=Merhaba,%20sigorta%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp-btn" title="WhatsApp ile yazın">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="container">
-            <div class="cookie-content">
-                <p>
-                    <i class="fas fa-cookie-bite"></i>&nbsp;
-                    Bu web sitesi, size en iyi deneyimi sunmak için çerezleri kullanmaktadır. 
-                    Siteyi kullanmaya devam ederek çerez politikamızı kabul etmiş olursunuz.
-                </p>
-                <div class="cookie-buttons">
-                    <button class="btn-cookie-accept" id="cookieAccept">Kabul Et</button>
-                </div>
+<!-- ========== COOKIE BANNER ========== -->
+<div class="cookie-banner" id="cookieBanner">
+    <div class="container">
+        <div class="cookie-content">
+            <p>🍪 Bu web sitesi size en iyi deneyimi sunmak için çerezleri kullanmaktadır. Devam ederek <a href="#">Çerez Politikamızı</a> kabul etmiş olursunuz.</p>
+            <div class="cookie-buttons">
+                <button class="cookie-accept" onclick="acceptCookies()">Kabul Et</button>
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-        // ==================== PRELOADER ====================
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('preloader').classList.add('hidden');
-            }, 1500);
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+    // Preloader
+    window.addEventListener('load', () => {
+        setTimeout(() => document.getElementById('preloader').classList.add('hidden'), 1500);
+    });
+
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('active');
         });
+    });
 
-        // ==================== NAVBAR SCROLL ====================
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    // Particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+        const p = document.createElement('div');
+        p.classList.add('particle');
+        p.style.left = Math.random() * 100 + '%';
+        const size = Math.random() * 4 + 2 + 'px';
+        p.style.width = size; p.style.height = size;
+        p.style.animationDuration = Math.random() * 15 + 10 + 's';
+        p.style.animationDelay = Math.random() * 10 + 's';
+        particlesContainer.appendChild(p);
+    }
 
-        // ==================== MOBILE MENU ====================
-        const mobileToggle = document.getElementById('mobileToggle');
-        const navLinks = document.getElementById('navLinks');
-        const mobileOverlay = document.getElementById('mobileOverlay');
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        mobileToggle.addEventListener('click', () => {
-            mobileToggle.classList.toggle('active');
-            navLinks.classList.toggle('open');
-            mobileOverlay.classList.toggle('open');
-            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
-        });
+    // FAQ
+    function toggleFaq(element) {
+        const item = element.parentElement;
+        document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) i.classList.remove('active'); });
+        item.classList.toggle('active');
+    }
 
-        mobileOverlay.addEventListener('click', () => {
-            mobileToggle.classList.remove('active');
-            navLinks.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-            document.body.style.overflow = '';
-        });
+    // Form submit
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('.form-submit');
+        btn.innerHTML = '<i class="fas fa-check-circle"></i> Talebiniz Alındı!';
+        btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+        setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Teklif Talep Et';
+            btn.style.background = '';
+            e.target.reset();
+        }, 3000);
+    }
 
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileToggle.classList.remove('active');
-                navLinks.classList.remove('open');
-                mobileOverlay.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-        });
+    // Scroll top
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+    });
+    function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
-        // ==================== ACTIVE NAV LINK ====================
-        const sections = document.querySelectorAll('section[id]');
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY + 100;
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute('id');
-                const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
-                if (navLink) {
-                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                        document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
-                        navLink.classList.add('active');
-                    }
-                }
-            });
-        });
+    // Cookie
+    setTimeout(() => {
+        if (!localStorage.getItem('cookiesAccepted'))
+            document.getElementById('cookieBanner').classList.add('show');
+    }, 2000);
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookieBanner').classList.remove('show');
+    }
 
-        // ==================== SCROLL TO TOP ====================
-        const scrollTopBtn = document.getElementById('scrollTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        });
-
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // ==================== SCROLL ANIMATIONS ====================
-        const observerOptions = {
-            threshold: 0.15,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => {
-            observer.observe(el);
-        });
-
-        // ==================== COUNTER ANIMATION ====================
-        const counters = document.querySelectorAll('.counter');
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counter = entry.target;
-                    const target = parseInt(counter.getAttribute('data-target'));
-                    const increment = target / 60;
-                    let current = 0;
-
-                    const updateCounter = () => {
-                        current += increment;
-                        if (current < target) {
-                            counter.textContent = Math.ceil(current);
-                            requestAnimationFrame(updateCounter);
-                        } else {
-                            counter.textContent = target;
-                        }
-                    };
-
-                    updateCounter();
-                    counterObserver.unobserve(counter);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        counters.forEach(counter => counterObserver.observe(counter));
-
-        // ==================== PRODUCT TABS ====================
-        const productTabs = document.querySelectorAll('.product-tab');
-        const productContents = document.querySelectorAll('.product-content');
-
-        productTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const product = tab.getAttribute('data-product');
-
-                productTabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                productContents.forEach(content => {
-                    content.classList.remove('active');
-                });
-
-                const targetContent = document.getElementById(`product-${product}`);
-                if (targetContent) {
-                    targetContent.classList.add('active');
-                    // Re-trigger animations
-                    targetContent.querySelectorAll('.fade-left, .fade-right').forEach(el => {
-                        el.classList.remove('visible');
-                        setTimeout(() => el.classList.add('visible'), 50);
-                    });
-                }
-            });
-        });
-
-        // ==================== FORM SUBMISSION ====================
-        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
-            const btn = this.querySelector('.btn-form-submit');
-            const originalContent = btn.innerHTML;
-            
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fas fa-check"></i> Teklif Talebiniz Alındı!';
-                btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
-
-                setTimeout(() => {
-                    btn.innerHTML = originalContent;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                    this.reset();
-                }, 3000);
-            }, 1500);
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
         });
-
-        // ==================== COOKIE BANNER ====================
-        const cookieBanner = document.getElementById('cookieBanner');
-        const cookieAccept = document.getElementById('cookieAccept');
-
-        if (!localStorage.getItem('cookiesAccepted')) {
-            setTimeout(() => {
-                cookieBanner.classList.add('show');
-            }, 2000);
-        }
-
-        cookieAccept.addEventListener('click', () => {
-            localStorage.setItem('cookiesAccepted', 'true');
-            cookieBanner.classList.remove('show');
-        });
-
-        // ==================== SMOOTH SCROLL ====================
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 80;
-                    const position = target.offsetTop - offset;
-                    window.scrollTo({ top: position, behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-
+    });
+</script>
 </body>
 </html>
